@@ -1,0 +1,778 @@
+\documentclass[10pt]{exam}
+\usepackage{amsmath, amssymb}
+% Palatino for rm and math | Helvetica for ss | Courier for tt
+\usepackage{mathpazo} % math & rm
+\linespread{1.05}        % Palatino needs more leading (space between lines)
+\usepackage[scaled]{helvet} % ss
+\usepackage{courier} % tt
+\normalfont
+\usepackage[T1]{fontenc}
+% \usepackage[sc]{mathpazo}
+% \usepackage[T1]{fontenc}
+\usepackage{ae,aecompl}
+\usepackage[left=2cm,right=2cm,top=5cm,bottom=2cm]{geometry}
+\DeclareMathOperator{\lcm}{\text{lcm}}
+\newcommand{\N}{\ensuremath{\mathbb{N}}}
+\newcommand{\R}{\ensuremath{\mathbb{R}}}
+\newcommand{\C}{\ensuremath{\mathbb{C}}}
+\newcommand{\Q}{\ensuremath{\mathbb{Q}}}
+\newcommand{\Z}{\ensuremath{\mathbb{Z}}}
+%%%%%%%%%%%
+\pagestyle{head}
+\firstpageheadrule
+\firstpageheader{CSIR-NET}
+{\bfseries \huge Abstract Algebra }
+{SANDEEP SUMAN}
+\runningheadrule
+\runningheader{CSIR-NET}
+{ABSTRACT ALGEBRA}
+{Page \thepage\ of \numpages}
+
+
+%%%%%%%%%%%%%%
+\begin{document} 
+\noindent \emph{Previous year question of CSIR-NET maths exam}. 
+\begin{questions}
+%%%%%%%%%%%%%%%% Basic Set Theory %%%%%%%%%%%%%%%%%
+\uplevel{\textbf{Syllabus:} Permutations and combinations, Pigeon-hole principle, inclusion-exclusion principle, dearrangement}
+\uplevel{\textsc{Question with one correct answer}}
+\question
+The number of $4$ digit numbers with no two digits common is
+
+\begin{oneparchoices}
+\choice $4536$
+\choice $3024$
+\choice $5040$
+\choice $4823$
+\end{oneparchoices}
+\question
+The number of words that can be formed by permuting the letters of `\textsc{mathematics}' is 
+
+\begin{oneparchoices}
+\choice $5040$
+\choice $4989600$
+\choice $11!$
+\choice $8!$  
+\end{oneparchoices}
+
+
+
+\question
+Let $M=\{(a_1,a_2,a_3):a_i \in \{1,2,3,4\},a_1+a_2+a_3=6\}$, Then the number of elements in $M$ is
+
+\begin{oneparchoices}
+\choice $8$
+\choice $9$
+\choice $10$
+\choice $12$  
+\end{oneparchoices}
+
+\question
+In a group of $265$ persons, $200$ like singing, $110$ like dancing and $55$ like painting. If $60$ persons like both singing and dancing, $30$ like both singing and painting and $10$ like all three activities, then the number of persons who like \textit{only} dancing and painting is
+
+\begin{oneparchoices}
+\choice $10$
+\choice $20$
+\choice $30$
+\choice $40$  
+\end{oneparchoices}
+
+\question
+The number of surjective maps from a set of $4$ elements to a set of $3$ elements is
+
+\begin{oneparchoices}
+\choice $36$
+\choice $64$
+\choice $69$
+\choice $81$  
+\end{oneparchoices}
+
+\question 
+An ice cream shop sells ice cream in five possible falvours: Vanilla, Chocolate, Strawberry, Mango and Pineapple. How many combinations of three scoop cones are possible? [Note: The repeatation of flavours allowed but the order in which the flavours are chosen does not matter.]
+
+\begin{oneparchoices}
+\choice $10$ 
+\choice $20$ 
+\choice $35$ 
+\choice $243$
+\end{oneparchoices} 
+
+\question 
+We are given a class consisting of $4$ boys and $4$ girls. A committee that consists of a President, a Vice-President and a Secretary is to be chosen among the $8$ students of the class. Let $a$ denote the number of ways of choosing the committee in such a way that the committee has at least one boy and at least one girl. Let $b$ deonote the number of ways of choosing the committee in such a way that the number of girls is greater than or equal to that of the boys. Then 
+
+\begin{oneparcheckboxes}
+\choice $a = 288$ 
+\choice $b = 168$ 
+\choice $a = 144$ 
+\choice $b = 192$
+\end{oneparcheckboxes}
+ 
+%%%%%%%%%%%%%%Basic Nmber Theory %%%%%%%%%%%%%%%%%%
+\uplevel{\textbf{Syllabus:} Fundamental theorem of arithmetic, divisibility in $\mathbb{Z}$, congruences, Chinease remainder theorem, Euler's $\phi$ function, Primitive roots}
+\question
+The number of positive divisors of $50000$ is
+
+\begin{oneparchoices}
+\choice $20$
+\choice $30$
+\choice $40$
+\choice $50$  
+\end{oneparchoices}
+
+\question 
+The number of multiplies of $10^{44}$ that divide $10^{55}$ is 
+
+\begin{oneparchoices}
+\choice $11	$
+\choice $12	$
+\choice $121$
+\choice $144$  
+\end{oneparchoices}
+\question
+The unit digit of $2^{100}$ is
+
+\begin{oneparchoices}
+\choice $2$
+\choice $4$
+\choice $6$
+\choice $8$
+\end{oneparchoices}
+
+\question
+The last digit of $38^{2011}$ is
+
+\begin{oneparchoices}
+\choice $6$
+\choice $2$
+\choice $4$
+\choice $8$  
+\end{oneparchoices}
+
+\question
+The last two digit of $7^{81}$ are 
+
+\begin{oneparchoices}
+\choice $07$
+\choice $17$
+\choice $37$
+\choice $47$  
+\end{oneparchoices}
+
+\question
+For any integers $a,b$ let $N_{a,b}$ denote the number of positive integers $x<1000$ satisfying $x=a (\text{mod } 27)$ and $x=a (\text{mod } 37)$. Then
+
+\begin{choices}
+\choice there exist $a,b$ such that $N_{a,b}=0$
+\choice for all $a,b$, $N_{a,b}=1$
+\choice for all $a,b$ , $N_{a,b}>1$
+\choice there exist $a,b$ such that $N_{a,b}=1$, and there exist $a,b$ such that $N_{a,b}=2$
+\end{choices}
+
+\question
+The number of elements in the set $\{m:1\leq m \leq 1000, m \text{ and } 1000 \text{ are relatively prime} \}$ is
+
+\begin{oneparchoices}
+\choice $100$
+\choice $250$
+\choice $300$
+\choice $400$
+\end{oneparchoices}
+
+\question 
+If $n$ is a positive integer such that the sum of all positive integers $a$ satisfy $1 \leq a \leq n$ and $\gcd(a,n) = 1$ is equal to $240 n $, then the number of summands, namely, $\phi(n)$ is 
+
+\begin{oneparchoices}
+\choice $120$
+\choice $124$
+\choice $240$ 
+\choice $480$
+\end{oneparchoices}
+
+\question
+For a positive integer $m$, let $\phi(m)$ denote the number of integers $k$ such that $1 \leq k \leq m$ and $\gcd(k,m)=1$. Then which of the followong statements are necessarily true?
+
+\begin{checkboxes}
+\choice $\phi(n)$ divides $n$ for every positive integer $n$.
+\choice $n$ divides $\phi(a^n-1)$ for all positive integers $a$ and $n$.
+\choice $n$ divides $\phi(a^n-1)$ for all positive integers $a$ and $n$ such that $\gcd(a,n)=1$ 
+\choice $a$ divides $\phi(a^n-1)$ for all positive integers $a$ and $n$ such that $\gcd(a,n)=1$ 
+\end{checkboxes}
+
+
+\question 
+For positive integers $m$ and $n$ let $F_n = 2^{2^n} + 1 $ and $G_m = 2^{2^n} -1 $. Which of the following statements are true?
+
+\begin{checkboxes}
+\choice $F_n$ divides $G_m$ whenever $m > n$ 
+\choice $\gcd(F_n, G_m) = 1$ whenever $m =  n$ 
+\choice $\gcd(F_n, G_m) = 1$ whenever $m \neq n$ 
+\choice $G_m$ divides $F_n$ whenever $m < n$ 
+\end{checkboxes} 
+%%%%%%%%%%%% Group Theory %%%%%%%%%%%%
+\uplevel{\textbf{Syllabus:} Groups, subgroups, normal subgroup, quotient groups, homomorphism, cyclic groups, Cayley theorem, class equation, Sylow theorem}
+
+
+\question
+Let $G=\mathbb{Z}_{10} \times \mathbb{Z}_{15}$, then
+
+\begin{checkboxes}
+\choice $G$ contain exactly one element of order $2$
+\choice $G$ contain exactly $5$ element of order $3$
+\choice $G$ contain exactly $24$ element of order $5$
+\choice $G$ contain exactly $24$ element of order $10$
+\end{checkboxes}
+
+
+\question
+Consider a group $G$. Let $Z(G)$ be its centre, i.e., $Z(G)=\{g \in G:gh=hg \text{ for all } h \in G \}$. For $n \in \mathbb{N}$, the set of positive integers, define $$J_n = \{(g_1,\cdots, g_n) \in Z(G) \times \cdots \times Z(G):g_1\cdots g_n =e \}$$
+As a subset of the direct product group $G \times \cdots \times G$, $J_n$ is 
+\begin{choices}
+\choice not necessarily a subgroup
+\choice a subgroup but not necessarily a normal subgroup
+\choice a normal subgroup
+\choice isomorphic to the direct product $Z(G) \times \cdots \times Z(G)$ $((n-1) \text{ times })$
+\end{choices}
+
+
+\question
+Let $G$ be a group of order $77$. then the center of $G$ is isomorphic to
+
+\begin{oneparchoices}
+\choice $\mathbb{Z}_1$
+\choice $\mathbb{Z}_7$
+\choice $\mathbb{Z}_{11}$
+\choice $\mathbb{Z}_{77}$  
+\end{oneparchoices}
+
+\question
+How many normal subgroups does a non-abelian group $G$ of order $21$ have other than the identity subgroup $\{e\}$ and $G$?
+
+\begin{oneparchoices}
+\choice $0$
+\choice $1$
+\choice $3$
+\choice $7$  
+\end{oneparchoices}
+
+\question 
+Let $G$ be a nonabelian group. Then, its order can be
+
+\begin{oneparcheckboxes}
+\choice $25$
+\choice $55$
+\choice $125$
+\choice $55$
+\end{oneparcheckboxes}
+
+\question 
+Let $G$ be a group of order $45$. Then
+
+\begin{checkboxes}
+\choice $G$ has an element of order $9$
+\choice $G$ has a subgroup of order $9$
+\choice $G$ has a normal subgroup of order $9$
+\choice $G$ has an normal subgroup  of order $5$
+\end{checkboxes}
+
+
+\question 
+The total number of non-isomophic groups of order $122$ is 
+
+\begin{oneparchoices}
+\choice $2$ 
+\choice $1$ 
+\choice $61$ 
+\choice $4$
+\end{oneparchoices} 
+
+\question
+For any group $G$ of order $36$ and any subgroup $H$ of $G$ order $4$,
+
+\begin{checkboxes}
+\choice $H \subset Z(G)$
+\choice $H=Z(G)$
+\choice $H$ is normal in $G$
+\choice $H$ is an abelian group.
+\end{checkboxes}
+
+\question
+Let $H=\{e,(12)(34)\}$ and $K=\{e,(12)(34),(13)(24),(14)(23)\}$ be subgroup of $S_4$, where $e$ denotes the identify element of $S_4$. Then
+
+\begin{checkboxes}
+\choice $H$ and $K$ are normal subgroup of $S_4$
+\choice $H$ is normal in $K$ and $K$ are normal in $A_4$
+\choice $H$ is normal in $A_4$ but not in $S_4$
+\choice $H$ is normal in $S_4$ but $H$ is not
+\end{checkboxes}
+
+\question 
+Which of the following numbers can be orders of permutations $\sigma$ of $11$ symbols such that $\sigma$ does not fix any symbol?
+
+\begin{oneparcheckboxes}
+\choice $18$
+\choice $30$
+\choice $15$
+\choice $28$
+\end{oneparcheckboxes}
+
+\question 
+Let $\sigma = (1~2)(3~4~5)$ and $\tau = (1~2~3~4~5~6)$ be permutation in $S_6$, the group of permutations on six symbols. Which of the following statements are true?
+
+\begin{checkboxes}	
+\item The subgroup $\langle \sigma \rangle$ and $\langle \tau \rangle$ are isomorphic to each other.
+\item $\langle \sigma \rangle$ and $\langle \tau \rangle$ are conjugate in $S_6$.
+\item $\langle \sigma \rangle \cap \langle \tau \rangle$ is trivial group. 
+\item $\langle \sigma \rangle$ and $\langle \tau \rangle$ commute.
+\end{checkboxes}
+
+\question 
+Let $S_n$ denote the symmetric group on $n$ symbols. The group $S_3 \oplus \mathbb{Z}/2\mathbb{Z}$ is isomorphic to which of the following groups?
+
+\begin{checkboxes}
+\item $\mathbb{Z}/12\mathbb{Z}$
+\item $\mathbb{Z}/6\mathbb{Z} \oplus \mathbb{Z}/6\mathbb{Z}$
+\item $A_4$, the alternating group of order $12$ 
+\item $D_6$, the dihedral group of order $12$ 
+\end{checkboxes}
+
+\question 
+Given the permutation $\sigma = \begin{pmatrix} 1 & 2 & 3 & 4 & 5 \\ 3 & 1 & 2 & 5 & 4 \end{pmatrix}$ the matrix $A$ is defined to be the one whose $i-$th column is the $\sigma(i)-$th column of the identity matrix $I$. Which of the following is correct?
+
+\begin{oneparchoices}
+\choice $A = A^{-2}$
+\choice $A = A^{-4}$
+\choice $A = A^{-5}$
+\choice $A = A^{-1}$
+\end{oneparchoices}
+
+\question
+Let $G$ denote the group $S_4 \times S_3$. Then
+
+\begin{checkboxes}
+\choice a $2-$Sylow subgroup of $G$ is normal
+\choice a $3-$Sylow subgroup of $G$ is normal
+\choice $G$ has a non-trivial normal subgroup
+\choice $G$ has a normal subgroup of order $72$
+\end{checkboxes}
+
+ 
+\question
+For a positive integer $n \geq 4$ and a prime number $p \leq n$, let $U_{p,n}$ denote the union of all $p-$Sylow subgroups of the alternating group $A_n$ on letters $n$ letters. Also let $K_{p,n}$ denote the subgroup of $A_n$ generated by $U_{p,n}$, and let $\mid K_{p,n} \mid$ denote the order of $K_{p,n}$. Then
+
+\begin{oneparcheckboxes}
+\choice $K_{2,4}=12$
+\choice $K_{2,4}=4$
+\choice $K_{2,5}=60$
+\choice $K_{3,5}=30$  
+\end{oneparcheckboxes}
+
+\question
+Determine which of the following cannot be the class equation of a group
+
+\begin{oneparcheckboxes}
+\choice $10=1+1+1+2+5$
+\choice $4=1+1+2$
+\choice $8=1+1+3+3$
+\choice $6=1+2+3$
+\end{oneparcheckboxes}
+
+\question
+The number of group homomorphism from the symmetric group $S_3$ to $\mathbb{Z}/6 \mathbb{Z}$ is 
+
+\begin{oneparchoices}
+\choice $1$
+\choice $2$
+\choice $3$
+\choice $6$  
+\end{oneparchoices}
+
+\question
+Consider the group $G=\mathbb{Q}/\mathbb{Z}$ where $\mathbb{Q}$ and $\mathbb{Z}$ are the groups of rational numbers and integers respectively. Let $n$ be a positive integers. Then is there is a cyclic subgroup of order $n$?
+
+\begin{choices}
+\choice not necessarily 
+\choice yes, a unique one
+\choice yes, but not necessarily a unique one
+\choice never
+\end{choices}
+
+\question
+Let $p$ be a prime number. The order of a $p-$Sylow subgroup of the group $GL_{50}(\mathbb{F}_p)$ of invertible $50 \times 50$ matrices from the finite field $\mathbb{F}_p$, equals
+
+\begin{oneparchoices}
+\choice $p^{50}$
+\choice $p^{125}$
+\choice $p^{1250}$
+\choice $p^{1225}$  
+\end{oneparchoices}
+
+\question
+For which of the following primes $p$, does the polynomial $x^4+x+6$ have a root of multiplicity $>1$ over a field of characteristic $p$?
+
+\begin{oneparchoices}
+\choice $2$
+\choice $3$
+\choice $5$
+\choice $7$  
+\end{oneparchoices}
+
+
+\question
+In the group of all invertible $4 \times 4$ matrices with entries in the field of $3$ elements, any $3-$Sylow subgroup has cardinality
+
+\begin{oneparchoices}
+\choice $3$
+\choice $81$
+\choice $243$
+\choice $729$
+\end{oneparchoices}
+
+
+\question 
+For a matrix $A$ as given below, which of them satisfy $A^6 = I$?
+
+\begin{choices}
+\choice $\begin{pmatrix} \cos \frac{pi}{4} & \sin \frac{pi}{4} & 0 \\ - \sin \frac{pi}{4} & \cos \frac{pi}{4} & 0 \\ 0 & 0 & 1 \end{pmatrix}$
+\choice $\begin{pmatrix}1&0&0\\0 &  \cos \frac{pi}{3} & \sin \frac{pi}{3} \\ 0 & -\sin \frac{pi}{3} & \cos \frac{pi}{3}  \end{pmatrix}$
+\choice $\begin{pmatrix} \cos \frac{pi}{6} &0& \sin \frac{pi}{6} \\ 0&1&0\\- \sin \frac{pi}{6}& 0 & \cos \frac{pi}{6} \end{pmatrix}$
+\choice $\begin{pmatrix} \cos \frac{pi}{2} & \sin \frac{pi}{2} & 0 \\ - \sin \frac{pi}{2} & \cos \frac{pi}{2} & 0 \\ 0 & 0 & 1 \end{pmatrix}$
+\end{choices}
+
+
+\question 
+Suppose $(F, +, \cdot)$ is the field with $9$ elements. Let $G = (F, +)$ and $H = (F \ \{0\}, \cdot )$ denote the underlying additive and multiplicative groups respectively. Then 
+
+\begin{checkboxes}
+\choice $G \cong (\Z / 3 \Z) \times (\Z / 3 \Z)$
+\choice $G \cong (\Z / 9 \Z)$
+\choice $H \cong (\Z / 2 \Z) \times (\Z / 2 \Z) \times (\Z / 2 \Z)$
+\choice $G \cong (\Z / 3 \Z) \times (\Z / 3 \Z)$ and $H \cong (\Z / 8 \Z)$
+\end{checkboxes}
+ 
+\question 
+Consider the multiplicative group $G$ of all the (complex) $2^n-$th roots of unity where $n = 0,1,2, \cdots$.Then 
+
+\begin{checkboxes}
+\choice Every proper subgroup of $G$ is finite.
+\choice $G$ has a finite set of generators 
+\choice $G$ is cyclic 
+\choice Every finite subgroup of $G$ is cyclic 
+\end{checkboxes}
+ 
+%%%%%%%%%% Ring Theory %%%%%%%%%%%%%%%
+\uplevel{\textsc{Syllabus:} Rings, ideals, prime and maximal ideals, quotient rings, unique factorization domain, principal
+ideal domain, Euclidean domain.Polynomial rings and irreducibility criteria}
+
+\question
+The number of non-trivial ring homomorphism form $\mathbb{Z}_{12}$ to $\mathbb{Z}_{28}$ is
+
+\begin{oneparchoices}
+\choice $1$
+\choice $3$
+\choice $4$
+\choice $7$  
+\end{oneparchoices}
+
+\question
+Let $\mathcal{R}$ be non-zero commutative ring with unity $1_{\mathcal{R}}$. Dfine the caracteristic of $\mathcal{R}$ to be the of $1_{\mathcal{R}}$ in $(R,+)$ if it is finite and to be the order of $1_{\mathcal{R}}$ in  $(R,+)$ is infinite. We denote the caracteristic of R by . In the following, let $\mathcal{R}$ and $S$ be non-zero commutative rings with unity. Then
+
+\begin{checkboxes}
+\choice char($\mathcal{R}$) is always a prime number. 
+\choice If $S$ is a quotient ring of char($\mathcal{R}$), then either char($S$) divides the char($\mathcal{R}$), or char($S$)$=0$.
+\choice If $S$ is a subring of $\mathcal{R}$ containig $1_{\mathcal{R}}$ then char($S$)$=$ char($\mathcal{R}$).
+\choice If char($\mathcal{R}$) is a prime number, then char($\mathcal{R}$) is a field.
+\end{checkboxes}
+
+\question
+Let $\mathcal{R}$ be the ring obtained by taking the quotient of $(\mathbb{Z}/6\mathbb{Z})[X]$ by the principal ideal $(2X+4)$. Then
+
+\begin{checkboxes}
+\choice $\mathcal{R}$ has infinitely many elements.
+\choice $\mathcal{R}$ is a field.
+\choice $5$ is a unit in $\mathcal{R}$.
+\choice $4$ is a unit in $\mathcal{R}$.
+\end{checkboxes}
+
+
+\question
+In which of the following fields, the polynomial
+$$x^3-312312x+123123$$
+is irreducible in $\mathbb{F}[x]$?
+\begin{choices}
+\choice the field $\mathbb{F}_3$ with $3$ elements
+\choice the field $\mathbb{F}_7$ with $7$ elements
+\choice the field $\mathbb{F}_{13}$ with $13$ elements
+\choice the filed $\mathbb{Q}$ of rational numbers
+\end{choices}
+
+\question
+Let $f(x)=x^3+2x^2+1$ and $g(x)=2x^2+x+2$. Then over $\mathbb{Z}_3$
+
+\begin{choices}
+\choice $f(x)$ and $g(x)$ are irreducible 
+\choice $f(x)$ is irreducible, but $g(x)$ is not
+\choice $g(x)$ is irreducible, but $f(x)$ is not
+\choice neither $f(x)$ nor $g(x)$ is irreducible
+\end{choices}
+
+\question
+Let $I_1$ be the ideal generated by $x^4+3x^2+2$ and $I_2$ be the ideal generated by $x^3+1$ in $\mathbb{Q}[x]$. If $F_1=\mathbb{Q}[x]/I_1$ and $F_2=\mathbb{Q}[x]/I_2$, then 
+
+\begin{choices}
+\choice $F_1$ and $F_2$ are fields
+\choice $F_1$ is a field, but $F_2$ is not a fields
+\choice $F_1$ is not a field while $F_2$ is a field
+\choice Neither $F_1$ nor $F_2$ is a field
+\end{choices}
+
+\question
+Let $\langle p(x)\rangle$ denote the ideal generated by the polynomial $p(x)$ in $\mathbb{Q}[x]$. If $f(x)=x^3+x^2+x+1$ and $g(x)=x^3-x^2+x-1$, then
+
+\begin{checkboxes}
+\choice $\langle f(x) \rangle+ \langle g(x)\rangle=\langle x^3+x \rangle $
+\choice $\langle f(x) \rangle+ \langle g(x)\rangle=\langle f(x)g(x)\rangle$
+\choice $\langle f(x) \rangle+ \langle g(x)\rangle=\langle x^2+1 \rangle$
+\choice $\langle f(x) \rangle+ \langle g(x)\rangle =\langle x^4-1 \rangle$
+\end{checkboxes}
+
+
+\question
+Let $\mathbb{R}[x]$ be the polynomial ring over $\mathbb{R}$ in one variable. Let $I \subset \mathbb{R}[x]$ be an ideal. Then
+
+\begin{checkboxes}
+\choice $I$ is a maximal ideal if and only if $I$ is a non-zero prime ideal
+\choice $I$ is a maximal ideal if and only if the quotien ring $\mathbb{R}[x]/I$ is isomorphic to $\mathbb{R}$
+\choice $I$ is a maximal ideal if and only if $I = (f(x))$, where $f(x)$ is a non-constant irrudicible polynomial over $\mathbb{R}$
+\choice $I$ is a maximal ideal if  and only if there exists a nonconstant polynomial  $f(x) \in I $ of degree $\leq 2$
+\end{checkboxes}
+%%%%%%%%%% Field Extension %%%%%%%%%%%%
+\uplevel{\textbf{Syllabus:} Fields, finite fields, field extensions, Galois Theory
+}
+
+
+\question
+Let $F$ be a field of $8$ elements and $$A=\{x \in F : x^7=1 \text{ and } x^k \neq 1 \text{ for all natural numbers } k <7\}.$$ Then the number of element in $A$ is 
+
+\begin{oneparchoices}
+\choice $1$
+\choice $2$
+\choice $3$
+\choice $6$  
+\end{oneparchoices}
+
+\question
+Let $F$ and $F'$ be two finite fields of order $q$ and $q'$ respectively. Then:
+
+\begin{checkboxes}
+\choice $F'$ contains a subfields isomorphic to $F$ if and only if $q\leq q'$.
+\choice $F'$ contains a subfields isomorphic to $F$ if and only if $q$ divides $q'$.
+\choice If the g.c.d of  $q$ and $q'$ is not $1$, then both are isomorphic to subfields of some finite field $L$.
+\choice Both $F$ and $F'$ are quotient rings of the ring $\mathbb{Z}[X]$.
+\end{checkboxes}
+
+
+\question
+Let $\omega$ be a complex number such that $\omega^3=1$ and $\omega =1$. Suppose $L$ is the field $\mathbb{Q}(\sqrt[3]{2},\omega)$ generated by $\sqrt[3]{2}$ and $\omega$ over the filed $\mathbb{Q}$ of rational numbers. Then the number of subfields $K$ of $L$ such that $\mathbb{Q} \subsetneq K \subsetneq L$ is 
+
+\begin{oneparchoices}
+\choice $1$
+\choice $2$
+\choice $3$
+\choice $4$  
+\end{oneparchoices}
+
+\question
+The degree of the extension $\mathbb{Q}(\sqrt{2}+\sqrt[3]{2})$ over the field $\mathbb{Q}(\sqrt{2})$ is
+
+\begin{oneparchoices}
+\choice $1$
+\choice $2$
+\choice $3$
+\choice $6$
+\end{oneparchoices}
+
+\question
+Let $I_1$ be the ideal generated by $x^2+1$ and $I_2$ be the ideal generated by $x^3-x^2+x-1$ in $\mathbb{Q}[x]$. If $R_1=\mathbb{Q}[x]/I_1$ and $R_2=\mathbb{Q}[x]/I_2$, then
+
+\begin{checkboxes}
+\choice $R_1$ and $R_2$ are fields
+\choice $R_1$ is a field and $R_2$ is not a field
+\choice $R_1$ is an integral domain and $R_2$ is not an integral domain
+\choice $R_1$ and $R_2$ are not integral domain
+\end{checkboxes}
+
+\question
+Let $R=\mathbb{Q}[x]/I$, where $I$ is the ideal generated by $1+x^2$. Let $y$ to be the coset of $x$ in $R$. Then
+
+\begin{checkboxes}
+\choice $y^2+1$ is irreducible over $R$
+\choice $y^2+y+1$ is irreducible over $R$
+\choice $y^2-y+1$ is irreducible over $R$
+\choice $y^3+y^2+y+1$ is irreducible over $R$
+\end{checkboxes}
+
+\question
+Let $f(x)=x^3+2x^2+x-1$. Determine in which of the following cases $f$ is irreducible over the field $k$.
+
+\begin{checkboxes}
+\choice $k=\mathbb{Q}$, the field of rational numbers. 
+\choice $k=\mathbb{R}$, the field of real numbers. 
+\choice $k=\mathbb{F}_2$, the finite field of $2$ elements. 
+\choice $k=\mathbb{F}_3$, the finite field of $3$ elements. 
+\end{checkboxes}
+
+\question
+Which of the following is true?
+
+\begin{checkboxes}
+\choice $\sin 7$ is algebraic over $\mathbb{Q}$
+\choice $\cos \pi/17$ is algebraic over $\mathbb{Q}$
+\choice $\sin^{-1} 1$ is algebraic over $\mathbb{Q}$
+\choice $\sqrt{2}+\sqrt{\pi}$ is algebraic over $\mathbb{Q}$
+\end{checkboxes}
+
+\question
+Let $f(x)=x^3+x^2+x+1$ and $g(x)=x^3+1$. Then in $\mathbb{Q}[x]$,
+
+\begin{checkboxes}
+\choice $\gcd(f(x),g(x))=x+1$
+\choice $\gcd(f(x),g(x))=x^2-1$
+\choice $\lcm(f(x),g(x))=x^5+x^3+x^2+x+1$
+\choice $\lcm(f(x),g(x))=x^5+x^4+x^3+x^2+x+1$
+\end{checkboxes}
+
+
+\question
+For a positive integer $n$, let $f_n(x)=x^{n-1}+x^{n-2}+\cdots +x+1$. Then\textbf{\emph{\textbf{}}}
+
+\begin{checkboxes}
+\choice $f_n(x)$ is an irreducible polynomial in $\mathbb{Q}[x]$ for every positive integers $n$.
+\choice $f_p(x)$ is an irreducible polynomial in $\mathbb{Q}[x]$ for every prime number $p$.
+\choice $f_{p^e}(x)$ is an irreducible polynomial in $\mathbb{Q}[x]$ for every prime number $p$ and every positive integer $e$.
+\choice $f_{p}(x^{p^{e-1}})$ is an irreducible polynomial in $\mathbb{Q}[x]$ for every prime number $p$ and every positive integer $e$.
+\end{checkboxes}
+
+\question
+Consider the ring $R=\mathbb{Z}[-\sqrt{-5}]=\{a+b\sqrt{-5}\}$ and the element $\alpha=3+\sqrt{-5}$ of $R$. Then
+\begin{checkboxes}
+\choice $\alpha$ is a prime.
+\choice $\alpha$ is irreducible.
+\choice $R$ is not a unique factorization domain.
+\choice $R$ is not an integral domain.
+\end{checkboxes}
+
+\question
+Consider the polynomial $f(x)=x^4-x^3+14x^2+5xz+16$. Also for a prime number $p$, let $\mathbb{F}_p$ denote the field with $p$ elements. Which of the following are always true?
+
+\begin{checkboxes}
+\choice Considering $f$ as a polynomial with coefficients in $\mathbb{F}_3$, it has no roots in $\mathbb{F}_3$.
+\choice Considering $f$ as a polynomial with coefficients in $\mathbb{F}_3$, it has a product of two irreducible factors of degree $2$ over $\mathbb{F}_3$.
+\choice Considering $f$ as a polynomial with coefficients in $\mathbb{F}_7$, it has a irreducible factors of degree $3$ over $\mathbb{F}_7$.
+\choice $f$ is a product of two polynomial of degree $2$ over $\mathbb{Z}$
+\end{checkboxes}
+
+\question
+For a positive integer $m$, let $a_m$ denote the number of disjoint prime ideals of the ring $\frac{\mathbb{Q}[x]}{\langle x^m-1 \rangle}$. Then
+
+\begin{oneparcheckboxes}
+\choice $\alpha_4=2$
+\choice $\alpha_4=3$
+\choice $\alpha_5=2$
+\choice $\alpha_5=3$  
+\end{oneparcheckboxes}
+
+\question
+Which of the following integral domains are Euclidean domains?
+
+\begin{checkboxes}
+\choice $\mathbb{Z}[\sqrt{-3}]=\{a+b\sqrt{-3}:a,b \in \mathbb{Z}\}$
+\choice $\mathbb{Z}[x]$
+\choice $\mathbb{R}[x^2,x^3]=\{f(x)= \sum_{i=0}^n a_ix^i \in \mathbb{R}[x]:a_1=0\}$
+\choice $\left( \frac{\mathbb{Z}[x]}{(2,x)} \right)\!\![y]$ where $x,y$ are independent variables and $(2,x)$ is the ideal generated by $2$ and $x$
+\end{checkboxes}
+
+\question
+Let $\mathbb{Z}[i]$ denote the ring of Gaussian integers. For which of the following values of $n$ is the quotient ring $\mathbb{Z}[i]/n \mathbb{Z}[i]$ an integral domain?
+
+\begin{oneparcheckboxes}
+\choice $2$
+\choice $13$
+\choice $19$
+\choice $7$
+\end{oneparcheckboxes}
+
+\question
+For which of the following values of $n$, does the finite field $\mathbb{F}_{5^n}$ with $5^n$ elements contain a non-trivial $93^{rd}$ root of unity?
+
+\begin{oneparcheckboxes}
+\choice $92$
+\choice $30$
+\choice $15$
+\choice $6$
+\end{oneparcheckboxes}
+
+
+\question
+Let $G$ be the Galois group of the splitting field of $x^5-2$ over $\mathbb{Q}$. Then, which of the following statements are true?
+
+\begin{checkboxes}
+\choice $G$ is cyclic
+\choice $G$ is non-abelian
+\choice the order of $G$ is $20$
+\choice $G$ has an element of order $4$
+\end{checkboxes}
+
+\question
+Which of the following is/are true?
+
+\begin{checkboxes}
+\choice Given any positive integer $n$, there exists a field extension of $\mathbb{Q}$ of degree $n$.
+\choice Given a positive integer $n$, there exist fields $F$ and $K$ such that $F \subset K$ and $K$ is Galois over $F$ with $[K:F] = n$.
+\choice Let $K$ be a Galois exension of $\mathbb{Q}$ with $[K: \mathbb{Q}] = 4$. Then there is a field $L$ such that $\mathbb{Q} \subset L \subset K, [L: \mathbb{Q}] = 2$ and $L$ is a Galois extension of $\mathbb{Q}$. 
+\choice There is algebraic extension $K$ of $\mathbb{Q}$ such that $[K: \mathbb{Q}]$ is not finite.
+\end{checkboxes}
+
+\question 
+Let $G$ denote the group of all the automorphisms of the field $F_{3^{100}}$ that consist of $3^{100}$ elements. Then the number of distinct subgroup of $G$ is equal to 
+
+\begin{oneparchoices}
+\choice $4$
+\choice $3$
+\choice $100$ 
+\choice $9$
+\end{oneparchoices}
+
+\question 
+Let $p,q$ be distinct primes. Then 
+
+\begin{choices}
+\choice $\Z / p^2q \Z $ has exactly $3$ distinct ideals 
+\choice $\Z / p^2q \Z $ has exactly $3$ distinct ideals 
+\choice $\Z / p^2q \Z $ has exactly $2$ distinct ideals 
+\choice $\Z / p^2q \Z $ has a unique maximal  ideals 
+\end{choices}
+
+\question 
+Let $f(x) = x^4 + 3 x^3 - 9x^2 + 7x + 27$ and let $p$ be a prime. Let $f_p(x)$ denote the corresponding polynomial with coefficients in $\Z / p \Z $. Then 
+
+\begin{checkboxes}
+\choice $f_2(x)$ is irreducible over $\Z / 2 \Z$ 
+\choice $f(x)$ is irreducible over $\Q$ 
+\choice $f_3(x)$ is irreducible over $\Z / 3 \Z$
+\choice $f(x)$ is irreducible over $\Z$ 
+\end{checkboxes}
+
+\question 
+Pick the correct statements:
+
+\begin{checkboxes}
+\choice $\Q(\sqrt{2})$ and $\Q(i)$ are isomorphic as $\Q-$vector spaces 
+\choice $\Q(\sqrt{2})$ and $\Q(i)$ are isomorphic as fields 
+\choice $Gal_{\Q}(\Q(\sqrt{2}) / \Q) \cong  Gal_{\Q}(\Q( i ) / \Q) $  
+\choice $\Q(\sqrt{2})$ and $\Q(i)$ are both Galois extensions of $\Q$ 
+\end{checkboxes}
+
+\end{questions}
+$$\circledS$$
+\end{document}
+

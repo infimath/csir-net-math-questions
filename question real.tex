@@ -1,0 +1,1036 @@
+\documentclass[10pt]{exam}
+\usepackage{amsmath, amssymb}
+%Fourier for math | Utopia (scaled) for rm | Helvetica for ss | Latin Modern for tt
+\usepackage{fourier} % math & rm
+\usepackage[scaled=0.875]{helvet} % ss
+\renewcommand{\ttdefault}{lmtt} %tt
+\usepackage{ae,aecompl}
+\usepackage[left=2cm,right=2cm,top=5cm,bottom=2cm]{geometry}
+\DeclareMathOperator{\orr}{\textsf{or}}
+\DeclareMathOperator{\andd}{\textsf{and}}
+\DeclareMathOperator{\lcm}{\text{lcm}}
+\DeclareMathOperator{\card}{\text{card}}
+\DeclareMathOperator{\dist}{\text{dist}}
+\newcommand{\N}{\ensuremath{\mathbb{N}}}
+\newcommand{\R}{\ensuremath{\mathbb{R}}}
+\newcommand{\C}{\ensuremath{\mathbb{C}}}
+\newcommand{\Q}{\ensuremath{\mathbb{Q}}}
+\newcommand{\Z}{\ensuremath{\mathbb{Z}}}
+\newcommand{\set}[1]{\ensuremath{\{#1\}}}
+%%%%%%%%%%%
+\pagestyle{head}
+\firstpageheadrule
+\firstpageheader{CSIR-NET}
+{\bfseries \huge Real Analysis }
+{SANDEEP SUMAN}
+\runningheadrule
+\runningheader{CSIR-NET}
+{REAL ANALYSIS}
+{Page \thepage\ of \numpages}
+
+
+%%%%%%%%%%%%%%
+\begin{document} 
+\noindent \emph{Previous year question of CSIR-NET maths exam}. 
+\begin{questions}
+
+\uplevel{\textbf{Syllabus:} 
+Elementary set theory, finite, countable and uncountable sets, Real number system as a complete ordered
+field, Archimedean property, supremum, infimum. 
+}
+\uplevel{\textsc{Question with one correct answer}}
+\question
+Let $A=\{x^2:0<x<1 \}$ and $B=\{x^3:1<x<2 \}$. Which of the following statement is true?
+\begin{choices}
+\choice there is one to one, onto function from $A$ to $B$. 
+\choice there is no one to one and onto function from $A$ to $B$ taking rationals to rationals  
+\choice there is no one to one from $A$ to $B$ which is onto.
+\choice there is no onto function from $A$ to $B$ which is one to one.
+\end{choices}
+
+\question
+Let $X$ be a connected subset of real numbers. If every element of $X$ is irrational, then the cardinality of $X$ is 
+
+\begin{oneparchoices}
+\choice infinite 
+\choice countably infinite
+\choice $2$
+\choice $1$
+\end{oneparchoices}
+
+\question 
+Consider the following sets of function on $\mathbb{R}$. \\
+$W = $ The set of constant functions on $\mathbb{R}$ \\ 
+$X = $ The set of polynomial functions on $\mathbb{R}$ \\ 
+$Y = $ The set of continuous functions on $\mathbb{R}$ \\ 
+$Z = $ The set of all        functions on $\mathbb{R}$ \\ 
+Which of these sets has the same cardinality as that of $\mathbb{R}$?
+
+\begin{oneparchoices}
+\choice Only $W$
+\choice Only $W$ and $X$ 
+\choice Only $W,X$ and $Z$ 
+\choice Only $W, X, Y$ and $Z$ 
+\end{oneparchoices}
+
+%%%%%%%%%%%%  Sequence and Series %%%%%%%%%%%%%%%%%%%%%
+\uplevel{\textbf{Syllabus:} 
+Sequences and series, convergence, limsup, liminf. 
+Bolzano Weierstrass theorem, Heine Borel theorem.
+}
+%	SOLVED  
+\question
+Let $a_n=\sin(\pi/n)$. For the sequence $a_1, a_2, \cdots$ the supremum is 
+
+\begin{choices}
+\choice $0$ and it is attained
+\choice $0$ and it is not attained
+\choice $1$ and it is attained
+\choice $1$ and it is not attained
+\end{choices}
+
+%	SOLVED 
+\question
+Which of the following is/are correct?
+
+\begin{checkboxes}
+\choice $n \log(1+ \frac{1}{n+1}) \rightarrow 1$ as $n \rightarrow \infty$
+\choice $(n+1) \log(1+ \frac{1}{n+1}) \rightarrow 1$ as $n \rightarrow \infty$
+\choice $n^2 \log(1+ \frac{1}{n}) \rightarrow 1$ as $n \rightarrow \infty$
+\choice $n \log(1+ \frac{1}{n^2}) \rightarrow 1$ as $n \rightarrow \infty$
+\end{checkboxes}
+
+%	SOLVED 
+\question
+If $\{x_n \}$ and $\{y_n \}$ are sequence of real numbers, which of the following is/are true?
+
+\begin{checkboxes}
+\choice $\limsup (x_n+y_n) \leq \limsup x_n + \limsup y_n$
+\choice $\limsup (x_n+y_n) \geq \limsup x_n + \limsup y_n$
+\choice $\liminf (x_n+y_n) \leq \liminf x_n + \liminf y_n$
+\choice $\liminf (x_n+y_n) \geq \liminf x_n + \liminf y_n$
+\end{checkboxes}
+
+%	SOLVED 
+\question 
+$\lim_{n \rightarrow \infty} \frac{1}{\sqrt{n}}(\frac{1}{\sqrt{1} + \sqrt{3}} + \frac{1}{\sqrt{3} + \sqrt{5}} + \cdots + \frac{1}{\sqrt{2n - 1} + \sqrt{2n + 1}})$ equals 
+
+\begin{oneparchoices}
+\choice $\sqrt{2}$
+\choice $\frac{1}{\sqrt{2}}$
+\choice $\sqrt{2} + 1$
+\choice $\frac{1}{\sqrt{2} + 1 }$
+\end{oneparchoices}
+
+%	SOLVED 
+\question 
+Let $\{a_n\}$, $\{b_n\}$ be given bounded sequence of positive real numbers. Then (Here $a_n \uparrow a $ means $a_n$ increases to $a$ as $n$ goes to $\infty $, similarly, $b_n \uparrow b $ means $b_n$ increases to $b$ as $n$ goes to $\infty $ )
+
+\begin{checkboxes}
+\choice If $a_n \uparrow a $, then $\sup_{n \geq 1}(a_n b_n) = a(\sup{n \geq n} b_n)$
+\choice If $a_n \uparrow a $, then $\sup_{n \geq 1}(a_n b_n) < a(\sup{n \geq n} b_n)$
+\choice If $b_n \uparrow b $, then $\inf_{n \geq 1}(a_n b_n) = (\inf{n \geq n} a_n)b$
+\choice If $b_n \uparrow b $, then $\inf_{n \geq 1}(a_n b_n) > (\inf{n \geq n} a_n)b$
+\end{checkboxes}
+
+%	SOLVED 
+\question 
+Let $p(x)$ be a polynomial in the real variable $x$ of degree $5$. Then $\lim_{n\rightarrow \infty} \frac{p(n)}{2^n} $ is 
+
+\begin{oneparchoices}
+\choice $5      $ 
+\choice $1      $ 
+\choice $0      $ 
+\choice $\infty $ 
+\end{oneparchoices}
+
+\question
+Which of the following series is convergent?
+
+\begin{choices}
+\choice $\sum_{n=1}^{\infty} \frac{1}{\sqrt{n+1}-\sqrt{n}}$
+\choice $\sum_{n=1}^{\infty} \frac{\sin n}{n^2}$
+\choice $\sum_{n=1}^{\infty} (-1)^n \log n$
+\choice $\sum_{n=1}^{\infty} \frac{\log n}{n}$
+\end{choices}
+
+
+\question
+Using the fact that $\sum_{n=1}^{\infty} \frac{(-1)^n}{n}=\log 2$, $\sum_{n=1}^{\infty} \frac{(-1)^n}{n(n+1)}$ equals
+
+\begin{oneparchoices}
+\choice $1-2 \log 2$
+\choice $1+2 \log 2$
+\choice $(\log 2)^2$
+\choice $-(\log 2)^2$
+\end{oneparchoices}
+
+\question
+Using the fact that $\sum_{n=1}^{\infty} \frac{1}{n^2}=\frac{\pi^2}{2}$, $\sum_{n=1}^{\infty} \frac{1}{(2n+1)^2}$ equals
+
+\begin{oneparchoices}
+\choice $\frac{\pi^2}{12}$
+\choice $\frac{\pi^2}{12} -1$
+\choice $\frac{\pi^2}{8}$
+\choice $\frac{\pi^2}{8}-1$
+\end{oneparchoices}
+
+%	SOLVED
+\question
+Let $\{a_n\},\{b_n\}$ be sequence of real numbers satisfying $|a_n| \leq |b_n|$ for all $n \geq 1$. Then
+
+\begin{choices}
+\choice $\sum a_n$ converges whenever $\sum b_n$ converges
+\choice $\sum a_n$ converges absolutely whenever $\sum b_n$ converges absolutely
+\choice $\sum b_n$ converges whenever $\sum a_n$ converges
+\choice $\sum b_n$ converges absolutely whenever $\sum a_n$ converges absolutely
+\end{choices}
+
+%	SOLVED
+\question
+If $\sum_{n=1}^{\infty} a_n$ is absolutely convergent then which of the following is NOT true?
+
+\begin{choices}
+\choice $\sum_{m=n}^{\infty} a_m \rightarrow 0$ as $n \rightarrow \infty$
+\choice $\sum_{n=1}^{\infty} a_n \sin n$ is convergent
+\choice $\sum_{n=1}^{\infty} e^{a_n}$ is divergent
+\choice $\sum_{n=1}^{\infty} a_n^2$ is divergent
+\end{choices}
+
+%	NOT-SOLVED
+\question 
+Let $\{a_k \}$ be an unbounded, strictly increasing sequence of positive real numbers and $x_k = (a_{k+1} - a_k )/a_{k + 1}$. Which of the following statements is/are correct?
+
+\begin{checkboxes}
+\choice For all $n \geq m$, $\sum_{k=m}^n x_k > 1 - \frac{a_m}{a_n}$ 
+\choice For all $n \geq m$, $\sum_{k=m}^n x_k > \frac{1}{2}$ 
+\choice $\sum_{k=m}^n x_k $ converges to finite limit. 
+\choice $\sum_{k=m}^n x_k $ diverges to $\infty$  
+\end{checkboxes}
+
+\question
+The number of limit points of the set $\{ \frac{1}{m}+\frac{1}{n}:m,n \in \mathbb{Z} \}$
+
+\begin{choices}
+\choice $1$
+\choice $2$
+\choice finitely many 
+\choice infinitely many  
+\end{choices}
+
+
+\question
+The set $\{\frac{1}{n} \sin \frac{1}{n}:n \in \mathbb{N} \}$ has 
+\begin{choices}
+\choice one limit point and it is $0$ 
+\choice one limit point and it is $1$
+\choice one limit point and it is $-1$
+\choice three limit point and it is $-1,0$ and $1$.
+\end{choices}
+
+
+%%%%%%%%%%%% continuity and differentiability %%%%%%%%%
+\uplevel{\textbf{Syllabus:} 
+Continuity, uniform continuity, differentiability, mean value theorem.
+}
+
+\question
+Which of the following real-valued function on $(0,1)$ is uniformly  continuous?
+
+\begin{oneparchoices}
+\choice $\frac{1}{x}$
+\choice $\frac{\sin x}{x}$
+\choice $\sin \frac{1}{x}$
+\choice $\frac{\cos x}{x}$
+\end{oneparchoices}
+
+
+\question 
+Let $A \subset \R$ and $f:A \rightarrow \R$ be given by $f(x) = x^2$. Then $f$ is uniformly continuous if 
+
+\begin{choices}
+\choice $A$ is a bounded                 subset of $\R$ 
+\choice $A$ is a dense                   subset of $\R$ 
+\choice $A$ is a unbounded and connected subset of $\R$ 
+\choice $A$ is a unbounded and open      subset of $\R$ 
+\end{choices}
+
+
+\question 
+Let $f:(0,1) \rightarrow \R$ be continuous. Suppose that $|f(x) - f(y)| \leq |\sin x - \sin y|$ for all $x, y \in (0,1)$. Then 
+
+\begin{checkboxes}
+\choice $f$ is discontinuous at least one point in $(0,1)$
+\choice $f$ is continuous everywhere on  $(0,1)$, but not uniformly continuous on $(0,1)$
+\choice $f$ is uniformly continuous on $(0,1)$
+\choice $\lim_{x\rightarrow 0+} f(x)$ exists
+\end{checkboxes}
+
+\question 
+The function $f(x)=a_0+a_1\mid x \mid + a_2\mid x \mid^2 +a_3\mid x \mid^3$
+
+\begin{choices}
+\choice for no values of $a_0,a_1,a_2,a_3$
+\choice for any values of $a_0,a_1,a_2,a_3$
+\choice only for $a_1=0$
+\choice only if both $a_1=0$ and $a_3=0$.  
+\end{choices}
+
+
+\question
+Consider the function $f(x)=| \cos x |+|\sin(2-x)|$. At which of the following points is $f$ not differentiable?
+
+\begin{checkboxes}
+\choice $\{(2n+1)\frac{ \pi}{2}:n \in \mathbb{Z}\}$
+\choice $\{n \pi:n \in \mathbb{Z}\}$
+\choice $\{n \pi+2:n \in \mathbb{Z}\}$
+\choice $\{\frac{ n \pi}{2}:n \in \mathbb{Z}\}$
+\end{checkboxes}
+
+\question
+Consider the function 
+$$f(x)= \cos(|x-5|)+\sin(|x-3|)+|x+10|^3 - (|x|+4)^2.$$
+At which of the points is $f$ not differentiable?
+
+\begin{oneparcheckboxes}
+\choice $x=5$
+\choice $x=3$
+\choice $x=-10$
+\choice $x=0$
+\end{oneparcheckboxes}
+
+\question
+Let $I=\{1\} \cup \{2\} \subset \mathbb{R}$. For $x \in \mathbb{R}$, let $\phi(x)=\dist(x,I)=\inf \{|x-y|:y \in I\}$. Then
+
+\begin{choices}
+\choice $\phi$ is discontinuous on $\mathbb{R}$ but not differentiable only at $x=1$.
+\choice $\phi$ is continuous on $\mathbb{R}$ but not differentiable only at $x=1$.
+\choice $\phi$ is continuous on $\mathbb{R}$ but not differentiable only at $x=1$ and $x=2$.
+\choice $\phi$ is continuous on $\mathbb{R}$ but not differentiable only at $x=1,3/2$ and $2$.  
+\end{choices}
+
+\question
+Let $I=[0,1] \subset \mathbb{R}$. For $x \in \mathbb{R}$, let $\phi(x)=\dist(x,I)=\inf \{|x-y|:y \in I\}$. Then
+
+\begin{choices}
+\choice $\phi(x)$ is discontinuous somewhere in $\mathbb{R}$.
+\choice $\phi(x)$ is continuous on $\mathbb{R}$ but not continuously differentiable exactly at $x=0$.
+\choice $\phi(x)$ is continuous on $\mathbb{R}$ but not continuously differentiable exactly at $x=0$ and $x=1$.
+\choice $\phi(x)$ is differentiable on $\mathbb{R}$.  
+\end{choices}
+
+
+\question
+Let $F=\left \{f:\R \rightarrow \R: \vert f(x)-f(y)\vert \leq K\vert x-y \vert^{\alpha} \right \}$ for all $x,y \in \R$ and for some $\alpha >0$ and $K >0$. Which of the following is/are true?
+
+\begin{checkboxes}
+\choice every $f \in F$ is continuous
+\choice every $f \in F$ is uniformly continuous
+\choice every differentiable function $f$ is in $F$ 
+\end{checkboxes}
+
+\question 
+Let $f$ be a continuously differentialble function on $\mathbb{R}$. Suppose that 
+$$ L = \lim_{x \rightarrow \infty}(f(x)+f'(x))  $$
+exists. If $0 < L < \infty $, then which of the following statements is/are correct?
+
+\begin{checkboxes}
+\choice If $\lim_{x\rightarrow \infty} f'(x) $ exists, then it is $0$ 
+\choice If $\lim_{x\rightarrow \infty} f(x) $ exists, then it is $L$ 
+\choice If $\lim_{x\rightarrow \infty} f'(x) $ exists, then $\lim_{x\rightarrow \infty}f(x) = 0$ 
+\choice If $\lim_{x\rightarrow \infty} f(x) $ exists, then $\lim_{x\rightarrow \infty}f'(x) = L$ 
+\end{checkboxes}
+
+
+\question
+Let $f$ be a twice differentiable function on $\mathbb{R}$. Given that $f''(x)>0$ for all $x \in \mathbb{R}$
+\begin{choices}
+\choice $f(x)=0$ has exactly two solution on $\mathbb{R}$
+\choice $f(x)=0$ has a positive solution if $f(0)=0$ and $f'(0)>0$
+\choice $f(x)=0$ has no positive solution if $f(0)=0$ and $f'(0)>0$
+\choice $f(x)=0$ has no positive solution if $f(0)=0$ and $f'(0)<0$
+\end{choices}
+
+\question
+Let $f:[0,1] \rightarrow [0,1]$ be any twice differentiable function satisfying $f(ax+(1-a)y) \leq af(x)+(1-a)f(y)$ for all $x,y \in [0,1]$ and any $a \in [0,1]$. Then for all $x \in (0,1)$
+
+\begin{oneparchoices}
+\choice $f'(x) \geq 0$
+\choice $f''(x) \geq 0$
+\choice $f'(x) \leq 0$
+\choice $f''(x) \leq 0$
+\end{oneparchoices}
+
+\question
+Let, 
+\begin{equation}
+f(x)=
+\begin{cases}
+\frac{\sin x}{x}& \text{if } x\neq 0\\
+1& \text{if } x =0.
+\end{cases}
+\end{equation}
+Then $f$ is,
+
+\begin{choices}
+\choice discontinuous
+\choice continuous but not differentiable
+\choice differentiable only once
+\choice differentiable more than once
+\end{choices}
+%%%%%%%%%%% Sequence and Series of Function %%%%%%%%%
+\uplevel{\textbf{Syllabus:} 
+Sequences and series of functions, uniform convergence.
+}
+
+\question
+Which of the following statement is true?
+\begin{choices}
+\choice $ \lim_{x \rightarrow \infty} \frac{\log x}{x^{1/2}} =0$ and $ \lim_{x \rightarrow \infty} \frac{\log x}{x} = \infty$
+\choice $ \lim_{x \rightarrow \infty} \frac{\log x}{x^{1/2}} =\infty$ and $ \lim_{x \rightarrow \infty} \frac{\log x}{x} = 0$
+\choice $ \lim_{x \rightarrow \infty} \frac{\log x}{x^{1/2}} =0$ and $ \lim_{x \rightarrow \infty} \frac{\log x}{x} = 0$
+\choice $ \lim_{x \rightarrow \infty} \frac{\log x}{x^{1/2}} =0$ and $ \lim_{x \rightarrow \infty} \frac{\log x}{x}$ does not exist 
+\end{choices}
+
+\question
+Let $f_n(x)=x^{1/n}$ for $x\in [0,1]$. Then
+
+\begin{choices}
+\choice $\lim_{n \rightarrow \infty} f_n(x)$ exist for all $x \in [0,1]$
+\choice $\lim_{n \rightarrow \infty} f_n(x)$ defines a continuous function on $x \in [0,1]$
+\choice $\lim_{n \rightarrow \infty} f_n(x)$ converges uniformly on $x \in [0,1]$
+\choice $\lim_{n \rightarrow \infty} f_n(x)=0$ for all $x \in [0,1]$
+\end{choices}
+
+\question
+Let, 
+\begin{equation}
+f_n(x)=
+\begin{cases}
+1-nx& \text{for } x\in [0,1/n],\\
+0& \text{for } x \in [1/n,1].
+\end{cases}
+\end{equation}
+Then,
+
+\begin{choices}
+\choice $\lim_{n \rightarrow \infty} f_n(x)$ defines a continuous function on $x \in [0,1]$
+\choice $\lim_{n \rightarrow \infty} f_n(x)$ converges uniformly on $x \in [0,1]$
+\choice $\lim_{n \rightarrow \infty} f_n(x)=0$ for all $x \in [0,1]$
+\choice $\lim_{n \rightarrow \infty} f_n(x)$ exist for all $x \in [0,1]$
+\end{choices}
+
+
+\question
+Let $f_n:[1,2] \rightarrow [0,1]$ be given by $f_n(x)=(2-x)^n$ for all non-negative integers $n$.
+
+\smallskip Let $f_n(x)=\lim_{n \rightarrow \infty} f_n(x)$ for $1 \leq x \leq 2$. Then which of the following is true.
+
+\begin{choices}
+\choice $f$ is a continuous function on $[1,2]$
+\choice $f_n$ converges uniformly on $f$ on $[1,2]$ as $n \rightarrow \infty$ 
+\choice $\lim_{n\rightarrow \infty} \int_1^2 f_n(x) dx =\int_1^2 f(x) dx$
+\choice for any $a\in (1,2)$ we have $\lim_{n\rightarrow \infty} f_n(a) \neq f(a)$
+\end{choices}
+
+\question
+Let $\{b_n\}$ and $\{c_n\}$ be sequence of real numbers. Then a necessary and sufficient condition for the sequence of polynomials $f_n(x) = b_nx + c_nx^2$ to converge uniformly to $0$ on the real line is 
+
+\begin{choices}
+\choice $\lim_{n \rightarrow \infty} b_n = 0$ and $\lim_{n\rightarrow \infty} c_n = 0$ 
+\choice $\sum_{n = 1}^{\infty}\mid b_n \mid < \infty$ and $\sum_{n = 1}^{\infty} \mid c_n \mid = 0$
+\choice There exist a positive integer $N$ such that $b_n = 0$ and $c_n = 0$ for all $n > N$
+\choice $\lim_{n\rightarrow \infty} = 0$
+\end{choices}
+
+\question 
+Let $\{f_n\}$ be a sequence of continuous function on $\R$
+
+\begin{checkboxes}
+\choice If $\{f_n\}$ converges to $f$ pointwise on $\R$ then $ \lim_{n\rightarrow \infty} \int_{-\infty}^{\infty} f_n(x) dx = \int_{-\infty}^{\infty} f(x) dx $
+\choice If $\{f_n\}$ converges to $f$ uniformly on $\R$ then $ \lim_{n\rightarrow \infty} \int_{-\infty}^{\infty} f_n(x) dx = \int_{-\infty}^{\infty} f(x) dx $
+\choice If $\{f_n\}$ converges to $f$ uniformly on $\R$ then $f$ is continuous on $\R$ 
+\choice There exists a sequence of continuous functions  $\{f_n\}$ on $\R$, such that $\{f_n\}$ converges to  $f$ uniformly  on $\R$ but $ \lim_{n\rightarrow \infty} \int_{-\infty}^{\infty} f_n(x) dx \neq  \int_{-\infty}^{\infty} f(x) dx $
+\end{checkboxes}
+
+\question 
+Let $p_n(x) = a_n x^2 + b_n x + c_n$ be a sequence of quadratic polynomials where $a_n, b_n, c_n \in \R$ for all $n \geq 1$. Let $\lambda_0, \lambda_1, \lambda_2$ be distinct real numbers such that 
+$$ \lim_{n\rightarrow \infty} p_n(\lambda_0) = A_0,  \lim_{n\rightarrow \infty} p_n(\lambda_1) = A_1 \text{ and }  \lim_{n\rightarrow \infty} p_n(\lambda_2) = A_2. \text{ Then}$$
+
+\begin{checkboxes}
+\choice $ \lim_{n\rightarrow \infty} p_n(x) $ exists for all $x \in \R$ 
+\choice $ \lim_{n\rightarrow \infty} p_n'(x) $ exists for all $x \in \R$ 
+\choice $ \lim_{n\rightarrow \infty} p_n\left ( \frac{\lambda_0, \lambda_1, \lambda_2}{3} \right ) $ does not  exist 
+\choice $ \lim_{n\rightarrow \infty} p_n'\left ( \frac{\lambda_0, \lambda_1, \lambda_2}{3} \right ) $ does not  exist 
+\end{checkboxes}
+
+\question
+The power series $\sum_{n=0}^{\infty} 2^{-n}z^{2n}$ converges if 
+
+\begin{oneparchoices}
+\choice $|z| \leq 2$
+\choice $|z| < 2$
+\choice $|z| \leq \sqrt{2}$
+\choice $|z| \leq \sqrt{2}$
+\end{oneparchoices}
+
+\question
+The power series $\sum_{n=1}^{\infty} \frac{[2+(-1)^n]^n}{3^n} x^n$ converges
+
+\begin{choices}
+\choice only for $x=0$
+\choice for all $x \in \mathbb{R}$
+\choice only for $-1<x<1$
+\choice only for $-1<x\leq 1$  
+\end{choices}
+
+\question 
+Let $k$ be a positive integer. The radius of convergence of the series $\sum_{n=0}^{\infty} \frac{(n!)^k}{(kn)!}z^n $ is 
+
+\begin{oneparchoices}
+\choice $k$
+\choice $k^{-k}$
+\choice $k^{k}$
+\choice $\infty$
+\end{oneparchoices}
+
+\question 
+Let $\{a_n : n \geq 1 \}$ be a sequence of real numbers such that $\sum_{n=1}^{\infty} a_n $ is convergent and $\sum_{n =1}^{\infty} \mid a_n \mid $ is divergent. Let $R$ be the radius of convergence of the power series $\sum_{n=1}^{\infty} a_n x^n$. Then we can conclude that 
+
+\begin{oneparchoices}
+\choice $0 < R < 1$
+\choice $R = 1$
+\choice $0 <R < \infty$
+\choice $R =\infty $
+\end{oneparchoices}
+
+
+\question
+Consider the power series $\sum_{n=1}^{\infty} z^{n!}$. The radius of convergence of this series is 
+
+\begin{oneparchoices}
+\choice $0$
+\choice $\infty$
+\choice $1$
+\choice a real number greater than $1$
+\end{oneparchoices}
+
+\question
+Consider the power series $\sum_{n \geq 1} a_n z^n$ where $a_n=$ number of divisors of $n^{50}$. Then the radius of convergence of $\sum_{n \geq 1} a_n z^n$ is 
+
+\begin{oneparchoices}
+\choice $1$
+\choice $50$
+\choice $\frac{1}{50}$
+\choice $0$
+\end{oneparchoices}
+
+\question
+Consider the function $f(x)=e^{-x}$ and its Taylor approximation $g(x)$ of degree $3$. For $x=1/3$, $g(x)$ is 
+
+\begin{choices}
+\choice positive and less than $1$
+\choice negative and less than $-2$
+\choice positive and greater than $1$
+\choice less than $1$ but greater than $0.75$  
+\end{choices}
+%%%%%%%%%%%%%%% Riemann Integral %%%%%%%%%%%%%%%%%%%
+\uplevel{\textbf{Syllabus:} 
+Riemann sums and Riemann integral, Improper Integrals.
+}
+
+
+\question
+Define $f:[0,1] \rightarrow [0,1]$ by $f(x)= \frac{2^k-1}{2^k}$ for $x \in \left[\frac{2^{k-1}-1}{2^{k-1}}, \frac{2^k-1}{2^k} \right] $, $k \geq 1$, Then $f$ is a Riemann-integrable function such that
+
+
+\begin{choices}
+\choice $\int_0^1 f(x) dx=\frac{2}{3}$
+\choice $\frac{1}{2}<\int_0^1 f(x) dx< \frac{2}{3}$
+\choice $\int_0^1 f(x) dx=1$
+\choice $\frac{2}{3}<\int_0^1 f(x) dx<1$
+\end{choices}
+
+\question
+Let $f,g$ and $h$ be bounded function on the closed interval $[a,b]$, such that $f(x) \leq g(x) \leq h(x)$ for all $x\in [a,b]$. Let $P= \{ a=a_0 <a_1 <a_2< \cdots  <a_n=b \}$ be a partition of $[a,b]$. We denote by $U(f,P)$ and $L(f,P)$, the upper and lower Riemann sums of $f$ with respect to the partition and similarly for $g$ and $h$. Which of the following statements is necessarily true?
+
+\begin{choices}
+\choice If $U(h,P)-U(f,P)<1$ then If $U(g,P)-L(g,P)<1$
+\choice If $L(h,P)-L(f,P)<1$ then If $U(g,P)-L(g,P)<1$
+\choice If $U(h,P)-L(f,P)<1$ then If $U(g,P)-L(g,P)<1$
+\choice If $L(h,P)-U(f,P)<1$ then If $U(g,P)-L(g,P)<1$
+\end{choices}
+
+\question
+Let $f$ be a continuously differentiable real-valued function on $[a,b]$, such that $f'(x)<K$ for all $x\in [a,b]$. For a partition $P= \{ a=a_0 <a_1 <a_2< \cdots  <a_n=b \}$, let $U(f,P)$ and $L(f,P)$ denote the upper and lower Riemann sums of $f$ with respect to the $P$. Then
+
+\begin{choices}
+\choice If $|L(f,P)| \leq K(b-a) \leq |U(f,p)|$ then If $U(g,P)-L(g,P)<1$
+\choice If $U(f,P)-L(f,P) \leq K(b-a) $
+\choice If $U(f,P)-L(f,P) \leq K ||P|| $, where $||P||=\max_{0 \leq i \leq n-1} (a_{i+1}-a_i)$ is the norm of the partition.
+\choice$U(f,P)-L(f,P) \leq K||P||(b-a) $
+\end{choices}
+
+
+\question 
+Let $\alpha, p$ be real numbers and $\alpha > 1$ 
+
+\begin{choices}
+\choice If $p > 1$ then $\int_{-\infty}^{\infty} \frac{1}{|x|^{p \alpha}} dx < \infty $ 
+\choice If $p > \frac{1}{\alpha} $ then $\int_{-\infty}^{\infty} \frac{1}{|x|^{p \alpha}} dx < \infty $ 
+\choice If $p < \frac{1}{\alpha} $ then $\int_{-\infty}^{\infty} \frac{1}{|x|^{p \alpha}} dx < \infty $ 
+\choice For any  $p \in \R $ we have  $\int_{-\infty}^{\infty} \frac{1}{|x|^{p \alpha}} dx < \infty $ 
+\end{choices}
+
+
+\question
+Let $\lambda > 0 $ and $F(x) = 1-e^{\lambda x}$ for $x>0$. Then for $t>0$, $\int_0^{\infty} e^{-tx} dF(x)$ equals
+
+\begin{oneparchoices}
+\choice $\lambda/(\lambda + t)$
+\choice $\lambda/(\lambda - t)$
+\choice $0$
+\choice $\infty$
+\end{oneparchoices}
+
+%%%%%%%%%%%%%%% Monotonic Function and Lebegue Integral  %%%%%%%%%%%%%%%%%%%
+\uplevel{\textbf{Syllabus:} 
+Monotonic functions, types of discontinuity, functions of bounded variation, Lebesgue measure, Lebesgue integral.
+}
+
+\question
+Let $f$ be a monotone non-decreasing real valued function on $\mathbb{R}$. Then 
+
+\begin{choices}
+\choice $\lim_{x \rightarrow a} f(x)$ exist at each point of $a$
+\choice If $a<b$, then $\lim_{x \rightarrow a^{+}} f(x) \leq \lim_{x \rightarrow b^{-}} f(x)$ 
+\choice $f$ is an unbounded function
+\choice The function $g(x)=e^{-f(x)}$ is a bounced function
+\end{choices}
+
+\question
+Let $f_n$ be the sequence of integrable functions defined on an interval $[a,b]$. Then
+
+\begin{checkboxes}
+\choice If $f_n(x) \rightarrow 0$ a.e., then $\int_a^b f_n(x)dx \rightarrow 0$
+\choice If $\int_a^b f_n(x)dx \rightarrow 0$, then $f_n(x) \rightarrow 0$ a.e.
+\choice $f_n(x) \rightarrow 0$ a.e. and each of $f_n$ is a bounded function, then $\int_a^b f_n(x)dx \rightarrow 0$
+\choice $f_n(x) \rightarrow 0$ a.e. and each of $f_n$ is uniformly bounded, then $\int_a^b f_n(x)dx \rightarrow 0$
+\end{checkboxes}
+
+\question 
+Let $f$ be a monotonically increasing function from $[0,1]$ into $[0,1]$. Which of the following statements is/are true?
+
+\begin{checkboxes}
+\choice $f$ must be continuous at all but finitely many points in $[0,1]$ 
+\choice $f$ must be continuous at all but countably many points in $[0,1]$ 
+\choice $f$ must be Riemann integrable 
+\choice $f$ must be Lebesgue integrable 
+\end{checkboxes}
+
+%%%%%%%%%%%%%%%%%% Multivariable Function %%%%%%%%%%%%%%%%%%%
+\uplevel{\textbf{Syllabus:} 
+Functions of several variables, directional derivative, partial derivative, derivative as a linear
+transformation, inverse and implicit function theorems.
+}
+
+\question
+For $V=(V_1,V_2)\in \mathbb{R}^2$ and $W=(W_1,W_2)\in \mathbb{R}^2$, consider the determinant map $\det :\mathbb{R}^2 \times \mathbb{R}^2 \rightarrow \mathbb{R}$ defined by $\det (V,W)=V_1W_2-V_2W_1$. Then the derivative of determinant map at $(V,W)\in \mathbb{R}^2 \times \mathbb{R}^2$ is 
+
+\begin{choices}
+\choice $\det (H,W)+\det (V,K)$
+\choice $\det (H,K)$
+\choice $\det (H,V)+\det (W,K)$
+\choice $\det (V,H)+\det (K,W)$  
+\end{choices}
+
+\question
+Let $f :\mathbb{R}^2 \times \mathbb{R}^2 \rightarrow \mathbb{R}$ be a bilinear map $i.e.$, linear in each variable separately. Then for $(V,W)\in \mathbb{R}^2 \times \mathbb{R}^2$ the derivative $Df(V,W)$ evaluated on $(H,K) \in \mathbb{R}^2 \times \mathbb{R}^2$ is given by
+
+\begin{choices}
+\choice $f(V,K)+f(H,W)$
+\choice $f(H,K)$
+\choice $f(V,H)+f(W,K)$
+\choice $f(H,V)+f(W,K)$  
+\end{choices}
+
+\question
+Let $f$ be a real-valued function on $\mathbb{R}^3$ satisfying(for a fixed $\alpha \in \mathbb{R}$) $f(rx)=r^{\alpha}f(x)$ for any $r>0$ and $x \in \mathbb{R}^3$
+
+\begin{choices}
+\choice If $f(x)=f(y)$ whenever $||x||=||y||=\beta$ for a $\beta >0$, then $f(x)= \beta ||x||^{\alpha}$
+\choice If $f(x)=f(y)$ whenever $||x||=||y||=1$, then $f(x)=||x||^{\alpha}$
+\choice If $f(x)=f(y)$ whenever $||x||=||y||=1$, then $f(x)= c ||x||^{\alpha}$, for some constant $c$
+\choice If $f(x)=f(y)$ whenever $||x||=||y||$, then $f$ must be a constant function
+\end{choices}
+
+\question 
+Let $\Omega \subseteq \mathbb{R}^n$ be an open set and $f : \Omega \rightarrow \mathbb{R}$ be a differentiable function such that $(Df)(x) = 0$ for all $x \in \Omega$. Then which of the following is true?
+
+\begin{choices}
+\choice $f$ must be a constant function
+\choice $f$ must be constant on connected component of $\Omega$
+\choice $f(x) = 0$ or $1$ for $x \in \Omega$
+\choice The range of the function $f$ is a subset of $\mathbb{Z}$
+\end{choices}
+
+\question 
+Let $a, b, c$ be positive real numbers, 
+\begin{align*}
+D & = \{(x_1, x_2, x_3) \in \R^3: x_1^2 + x_2^2 + x_3^2 \leq 1\}, \\
+E & = \{(x_1, x_2, x_3) \in \R^3: \frac{x_1^2}{a^2} + \frac{x_2^2}{b^2} + \frac{x_3^2}{c^2} \leq 1\} ,
+\end{align*}
+And $A = \begin{pmatrix} a & 0 & 0 \\ 0 & b & 0 \\ 0 & 0 & c \end{pmatrix}$, det $A>1$. Then for a comptly supported continuous function $f$ on $\R^3$, which of the following are correct?
+
+\begin{checkboxes}
+\choice $\int_D f(Ax) dx = \int_E f(x) dx $
+\choice $\int_D f(Ax) dx = \frac{a}{abc} \int_D f(x) dx $
+\choice $\int_D f(Ax) dx = \frac{a}{abc} \int_E f(x) dx $
+\choice $\int_{\R^3} f(Ax) dx = \frac{a}{abc} \int_{\R^3} f(x) dx $
+\end{checkboxes} 
+
+\question 
+Let $A = \{(x,y)\in \R^2 : x+y \neq -1 \}$. Define $f:A \rightarrow \R^2$ by $f(x,y) = \left ( \frac{x}{1 + x +y}, \frac{y}{1 + x +y}\right )$. Then 
+
+\begin{checkboxes}
+\choice The Jacobian matrix of $f$ does not vanish on $A$ 
+\choice $f$ is infinitely differentiable on $A$ 
+\choice $f$ is injective on $A$
+\choice $f(A) = \R^2$ 
+\end{checkboxes}
+
+\question 
+Define $f:\R^2 \rightarrow \R^2$ by $f(x,y) = (x + 2y + y^2 + |xy|,2x + y + x^2 + |xy| ) \text{ for } (x,y ) \in \R^2.$
+Then 
+
+\begin{checkboxes}
+\choice $f$ is continuous     at $(0,0)$
+\choice $f$ is continuous     at $(0,0)$ but not differentiable at $(0,0)$
+\choice $f$ is differentiable at $(0,0)$
+\choice $f$ is differentiable at $(0,0)$ and derivative $Df(0,0)$ is invertible
+\end{checkboxes}
+
+\question 
+Consider three subsets of $\R^2$, namely 
+\begin{align*}
+A_1 &= \set{(x,y): x^2 + y^2 \leq 1}\\
+A_2 &= \set{(1,y): y \in \R }\\
+A_3 &= \set{(0,2)}
+\end{align*}
+ 
+ Then three always exists a continuous real-valued function $f$ on $\R^2$ such that $f(x) = a_j$ for $x \in A_j, j= 1,2,3$ 
+ 
+ \begin{checkboxes}
+ \choice If and only if at least two of the numbers $a_1, a_2, a_3$ are equal 
+ \choice if $a_1 = a_2 = a_3 $
+ \choice for all real values of  $a_1, a_2, a_3 $
+ \choice If and only if  $a_1= a_2 $
+ \end{checkboxes}
+%%%%%%%%%%%%%%%%%%%%%% Topology %%%%%%%%%%%%%%%%%%%%%%%%%%
+\uplevel{\textbf{Syllabus:} 
+Metric spaces, compactness, connectedness. Normed linear Spaces. Spaces of continuous functions as examples.
+}
+\question
+Let $(X,d)$ be a metric space and let $A \subset X$. For $x \in X$, define
+$$d(x,A)= \inf \{d(x,a): a \in A\}.$$
+If $d(x,A)=0$ for all $x \in X$, then which of the following assertions must be true?
+\begin{choices}
+\choice $A$ is compact 		
+\choice $A$ is closed 
+\choice $A$ is dense in $X$ 
+\choice $A=X$
+\end{choices}
+
+\question 
+For a non-empty subset $S$ and a point $x$ in a connected metric space $(X, d)$, let $d(x,S) =$ inf$\{d(x,y): y \in S\}$. Which of the following statements is/are correct?
+
+\begin{checkboxes}
+\choice If $S$ is closed and $d(x,S) > 0$ then $x$ is not an accumulation point of $S$ 
+\choice If $S$ is open and $d(x,S) > 0$ then $x$ is not an accumulation point of $S$ 
+\choice If $S$ is closed  and $d(x,S) > 0$ then $S$ does  not contain  $x$ 
+\choice If $S$ is closed  and $d(x,S) = 0$ then $x \in S$
+\end{checkboxes} 
+
+
+\question
+which of the following set are dense in $\R$ with respect to usual topology
+
+\begin{checkboxes}
+\choice $\{(x,y)\in \R^2: x \in \N \}$ 
+\choice $\{(x,y)\in \R^2: x+y \in \Q \}$ 
+\choice $\{(x,y)\in \R^2: x+y^2=5 \}$ 
+\choice $\{(x,y)\in \R^2: xy \neq 0 \}$ 
+\end{checkboxes}
+%%%%%% Continuous Function on Metric Spaces
+\question
+For a continuous function $f: \R \rightarrow \R$, let $Z(f) = \left \{x \in \R: f(x) = 0 \right \}$. Then $Z(f)$ is always
+
+\begin{oneparchoices}
+\choice compact
+\choice open 
+\choice connected 
+\choice closed 
+\end{oneparchoices}
+
+\question 
+Let $f:X \rightarrow Y$ be a function from a metric space $X$ to another metric space $Y$. For any Cauchy sequence $\{x_n\}$ in $X$, 
+
+\begin{choices}
+\choice If $f$ is continuous then $\{f(x_n)\}$ is a Cauchy sequence in $Y$.
+\choice If $\{f(x_n)\}$ is a Cauchy then $\{f(x_n)\}$  is always convergent in  $Y$.
+\choice If $\{f(x_n)\}$ is a Cauchy  in $Y$ then $f$ is continuous.
+\choice $\{x_n\}$ is always convergent in $X$.
+\end{choices}
+
+\question
+In which of the following cases, there is no continuous function $f$ form the set $S$ onto the set $T$?
+
+\begin{choices}
+\choice $S=[0,1],T=\mathbb{R}$
+\choice $S=(0,1),T=\mathbb{R}$
+\choice $S=[0,1],T=(0,1]$
+\choice $S=\mathbb{R},T=(0,1)$
+\end{choices}
+
+\question
+If $f:[0,1] \rightarrow (0,1)$ is continuous mapping then which of the following is NOT true?
+
+\begin{choices}
+\choice $F \subset [0,1]$ is a closed set implies $f(F)$ is closed in $\mathbb{R}$
+\choice $f(0)<f(1)$ then $f([0,1])$ must be equal to $[f(0),f(1)]$
+\choice There must exist $x \in (0,1)$ such that $f(x)=x$
+\choice $f([0,1]) \neq (0,1)$
+\end{choices}
+
+\question 
+Let $E$ be a subset of $\mathbb{R}$. Then the characteristic function $ \chi_E : \mathbb{R} \rightarrow \mathbb{R}$ is continuous if and only if 
+
+\begin{checkboxes}
+\choice $E$ is closed 
+\choice $E$ is open 
+\choice $E$ is both open and closed 
+\choice $E$ is neither open nor closed 
+\end{checkboxes}
+
+\question
+Let $X$ be a metric space and $f:X \rightarrow \mathbb{R}$ be a continuous function. Let $G = \{(x, f(x)):x \in X \} $ be the graph of $f$. Then 
+
+\begin{checkboxes}
+\choice $G$ is homeomorphic to $X$  
+\choice $G$ is homeomorphic to $\mathbb{R}$  
+\choice $G$ is homeomorphic to $X \times \mathbb{R}$  
+\choice $G$ is homeomorphic to $\mathbb{R} \times X$
+\end{checkboxes}  
+
+\question 
+Let $A$ be a subset of $\mathbb{R}$. Which of the following properties imply that $A$ is compact?
+
+\begin{checkboxes}
+\choice Every continuous function $f$ from $A$ has a convergent subsequence conveging to a point in $A$ 
+\choice Every sequence $\{x_n\} $ in $A$ has a convergent subsequence to a point in $A$ 
+\choice There exist a continuous function from $A$ onto $[0,1]$
+\choice There is no one-one and continuous function from $A$ onto $(0,1)$
+\end{checkboxes}
+
+\question
+Consider the following subset of $\mathbb{R}^2$, where $a,b \in \mathbb{R}$.
+\begin{align*}
+A&=\lbrace (x,y)\in \mathbb{R}^2:\frac{x^2}{a^2}+\frac{y^2}{b^2} = 1, a \neq b \rbrace &&\\
+B&=\lbrace (x,y)\in \mathbb{R}^2:\frac{x^2}{a^2}+\frac{y^2}{b^2} \leq 1, a \neq b \rbrace \\
+C&=\lbrace (x,y)\in \mathbb{R}^2:ax+by+5=0 \rbrace \\
+D&=\lbrace (x,y)\in \mathbb{R}^2:ax=by^2 \rbrace \\
+E&=\lbrace (x,y)\in \mathbb{R}^2:x^3+y^3=1 \rbrace
+\end{align*}
+Then which of the following is correct?
+\begin{choices}
+\choice $C$ and $D$ are compact, but $A,B,E$ are not compact.
+\choice $A$ and $B$ are compact, but $C,D,E$ are not compact.
+\choice $A,B$ and $E$ are compact, but $C,D$ are not compact.
+\choice $A$ and $E$ are compact, but $B,C,D$ are not compact.
+\end{choices}
+
+\question
+Which of the following subset of $\R^2$ are compact?
+
+\begin{checkboxes}
+\choice $\{(x,y): |x| \leq 1, |y| \leq 1 \}$
+\choice $\{(x,y): |x| \leq 1, |y|^2 \leq 1 \}$
+\choice $\{(x,y): x^2+3y^2 \leq 5 \}$
+\choice $\{(x,y): x^2 \leq y^2+1  \}$ 
+\end{checkboxes}
+
+\question 
+Which of the following subset of $\mathbb{R}^2$ is/are NOT compact?
+
+\begin{checkboxes}
+\choice $\{(x,y)\in \mathbb{R}^2 \mid x^2+y^2 \leq 1 \}$
+\choice $\{(x,y)\in \mathbb{R}^2 \mid x^2+y^2 \geq 1 \}$
+\choice $\{(x,y)\in \mathbb{R}^2 \mid x^2+y^2 <    1 \}$
+\choice $\{(x,y)\in \mathbb{R}^2 \mid x^2+y^2 =    1 \}$
+\end{checkboxes}
+
+
+
+\question 
+Which of the following are compact?
+
+\begin{checkboxes}
+\choice $\{(x,y) \in \R^2: (x-1)^2 + (y-2)^2 = 9 \} \cup \{(x,y) \in \R^2: y = 3 \} $
+\choice $\left \{ \left ( \frac{1}{m},\frac{1}{n} \right ) \in \R^2 : m, n \in \Z \setminus \{0\} \right \} \cup \{(0,0)\} \cup \left \{ \left ( \frac{1}{m}, 0  \right ) \in \R^2 : m \in \Z \setminus \{0\} \right \} \cup \left \{ \left ( 0,\frac{1}{n} \right ) \in \R^2 : n \in \Z \setminus \{0\} \right \}$
+\choice $\{(x,y,z) \in \R^3: x^2 + 2y^2 - 3z^2 = 1\}$
+\choice $\{(x,y,z) \in \R^3: |x| + 2|y| - 3|z| \leq  1\}$
+\end{checkboxes}
+
+\question
+Let $X$ be a metric space and $A \subset X$ be a connected set with at least two distinct points, then number of distinct point in $A$ is
+
+\begin{oneparchoices}
+\choice $2$
+\choice more than $2$, but finite
+\choice countably infinite
+\choice uncountable
+\end{oneparchoices}
+
+\question
+Let $\lambda > 0 $ and $F(x) = 1-e^{\lambda x}$ for $x>0$. Then for $t>0$, $\int_0^{\infty} e^{-tx} dF(x)$ equals
+
+\begin{oneparchoices}
+\choice $\lambda/(\lambda + t)$
+\choice $\lambda/(\lambda - t)$
+\choice $0$
+\choice $\infty$
+\end{oneparchoices}
+
+
+\question
+Suppose $p$ is a polynomial with real coefficients. Then which of the following statements is necessarily true?
+
+\begin{choices}
+\choice There is no root of the derivative $p'$ between two real roots of the polynomial $p$ 
+\choice There is exactly one root of the derivative $p'$ between any two real roots of $p$ 
+\choice There is exactly one root of the derivative $p'$ between any two consecutive  roots of $p$ 
+\choice There is at least  one root of the derivative $p'$ between any two consecutive  roots of $p$ 
+\end{choices}
+
+\question 
+Let $G = \{(x, f(x)): 0 \leq x \leq 1 \} $ be the graph of a real valued differentiable function $f$. Assume that $(1,0) \in G$. Suppose that the tangent vector to $G$ at any point is perpendicular to the radius vector at that point. Then which of the following is true?
+
+\begin{choices}
+\choice $G$ is the arc of an ellipse.
+\choice $G$ is the arc of a circle.
+\choice $G$ is a line segment.
+\choice $G$ is the arc of a parabola.
+\end{choices} 
+
+
+\question
+Which of the following subsets of $\mathbb{R}^2$ are convex?
+
+\begin{checkboxes}
+\choice $\{(x,y):|x| \leq 5, |y| \leq 10 \}$
+\choice $\{(x,y): x^2+y^2=1 \}$
+\choice $\{(x,y): y \geq x^2 \}$
+\choice $\{(x,y): y \leq x^2 \}$
+\end{checkboxes}
+
+\question
+Which of the following is/are metrics on $\R$?
+
+\begin{checkboxes}
+\choice $d(x,y)= \min(x,y)$
+\choice $d(x,y)= |x-y|$
+\choice $d(x,y)= |x^2-y^2|$
+\choice $d(x,y)= |x^3-y^3|$
+\end{checkboxes}
+
+
+\question
+For $x=(x_1,x_2, \cdots , x_d) \in \R^d$, and $p \geq 1$, define
+$$\|x\|_p= \left( \sum_{j=1} \vert x_j\vert^p \right)^{1/p} \text{and    } \|x\|_{\infty}=\max \{\vert x_j \vert:j=1,2,3,\cdots d \}$$
+Which of the following inequalities hold for all $x\in \R^d$?
+
+\begin{checkboxes}
+\choice $\|x\|_1 \geq \|x\|_2 \geq \|x\|_{\infty}$
+\choice $\|x\|_1 \leq d \|x\|_{\infty}$
+\choice $\|x\|_1 \leq \sqrt{d} \|x\|_{\infty}$
+\choice $\|x\|_1 \leq \sqrt{d} \|x\|_2$
+\end{checkboxes}
+
+\question
+Which of the following are matrices on $\mathcal{C}=\{f:[0,1] \rightarrow \R \text{is a continuous function}\}$
+
+\begin{checkboxes}
+\choice $d(f,g)= \sup\{|f(x)-g(x)|:x \in [0,1]\}$
+\choice $d(f,g)= \inf\{|f(x)-g(x)|:x \in [0,1]\}$
+\choice $d(f,g)=\int_0^1|f(x)-g(x)|dx $
+\choice $d(f,g)=\sup\{|f(x)-g(x)|:x \in [0,1]\} + \int_0^1|f(x)-g(x)|dx$
+\end{checkboxes}
+
+\question
+Let $X$ denote the two-point set $\{0, 1\}$ and write  $X_j\!\!=\!\!\{0, 1 \}$ for every $j= 1, 2, 3, \cdots $ Let $Y= \prod_{j=1}^{\infty} X_j$.  Which of the following is/are true? 
+
+\begin{checkboxes}
+\choice $Y$ is a countable set 
+\choice $\card Y= \card [0, 1] $
+\choice is uncountable 
+\choice $Y$ is uncountable
+\end{checkboxes}
+
+\question 
+Suppose that $P$ is a monic polynomial of degree $n$ in one variable with real coefficients and $K$ is a real number. Then which of the following statements is/are necessarily true?
+
+\begin{checkboxes}
+\choice If $n$ is even and $K > 0$, then there exists $x_0 \in \mathbb{R}$ such that $P(x_0) = K e^{x_0}$
+\choice If $n$ is odd and $K < 0$, then there exists $x_0 \in \mathbb{R}$ such that $P(x_0) = K e^{x_0}$
+\choice For any natural number $n$ and $0 < K < 1$, there exists $x_0 \in \mathbb{R}$ such that $P(x_0) = K e^{x_0}$
+\choice If $n$ is odd and $K \in \mathbb{R}$, then there exists $x_0 \in \mathbb{R}$ such that $P(x_0) = K e^{x_0}$
+\end{checkboxes}
+
+
+\question 
+Consider the normed linear spaces $X_1 = (C[0,1], \|.\|_1)$ and $X_{\infty} = (C[0,1], \|.\|_{\infty})$, where $C[0,1]$ denote the vector space of all continuous real valued functions on $[0,1]$ and $\|f\|_1 = \int_0^1 \mid f(t) \mid dt$, $\|f \|_{\infty} = \sup \{|f(t)| : t \in [0,1] \}$.Let $U_1$ and $U_{\infty}$ be the open unit balls in $X_1$ and $X_{\infty}$ respectively. Then 
+
+\begin{checkboxes}
+\choice $U_{\infty}$ is a subset of $U_1$
+\choice $U_1$ is a subset of $U_{\infty}$
+\choice $U_{\infty}$ is equal to  $U_1$
+\choice Neither $U_{\infty}$ is a subset of $U_1$ nor $U_1$ is a subset of $U_{\infty}$
+\end{checkboxes}
+
+
+\question 
+Let $X = \{(x,y) \in \R^2: x^2 + y^2 <5 \}$, and $K = \{(x,y) \in \R^2: 1 \leq x^2 + y^2 \leq 2 \orr 3 \leq x^2 + y^2 \leq 4\}$. Then, 
+
+\begin{checkboxes}
+\choice $X \setminus K $ has three connected components
+\choice $X \setminus K $ has no relatively compact  connected components in $X$ 
+\choice $X \setminus K $ has two  relatively compact  connected components in $X$ 
+\choice All connected component of $X \setminus K $   relatively compact  in $X$ 
+\end{checkboxes}
+
+\question 
+For two subsets $X$ and $Y$ of $\R$, let $X+Y = \{x+y : x \in X, y \in Y\}$
+
+\begin{checkboxes}
+\choice If $X$ and $Y$ are open sets the $X + Y$ is open 
+\choice If $X$ and $Y$ are closed  sets the $X + Y$ is closed  
+\choice If $X$ and $Y$ are compact  sets the $X + Y$ is compact  
+\choice If $X$ and $Y$ are closed and $Y$ is compact then $X + Y$ is closed 
+\end{checkboxes} 
+
+\question 
+Let $S \subset \R^2$ be defined by 
+$$ S = \left \{ \left (m + \frac{1}{2^{|p|}} ,n + \frac{1}{2^{|q|}} \right ): m,n,p,q \in \Z \right \}  $$
+Then, 
+
+\begin{checkboxes}
+\choice $S$ is discrete in $\R^2$ 
+\choice The set of limit points of $S$ is the set $\{(m,n):m,n \in \Z \}$
+\choice $\R^2 \setminus S $ is connected but not path connected 
+\choice $\R^2 \setminus S $ is path connected 
+\end{checkboxes}
+
+\end{questions}
+$$\circledS$$
+\end{document}
+

@@ -1,0 +1,212 @@
+\documentclass[10pt]{exam}
+\usepackage{amsmath, amssymb}
+%Fourier for math | Utopia (scaled) for rm | Helvetica for ss | Latin Modern for tt
+\usepackage{fourier} % math & rm
+\usepackage[scaled=0.875]{helvet} % ss
+\renewcommand{\ttdefault}{lmtt} %tt
+\usepackage{ae,aecompl}
+\usepackage[left=2cm,right=2cm,top=5cm,bottom=2cm]{geometry}
+\DeclareMathOperator{\orr}{\textsf{or}}
+\DeclareMathOperator{\andd}{\textsf{and}}
+\DeclareMathOperator{\lcm}{\text{lcm}}
+\DeclareMathOperator{\card}{\text{card}}
+\DeclareMathOperator{\dist}{\text{dist}}
+\newcommand{\N}{\ensuremath{\mathbb{N}}}
+\newcommand{\R}{\ensuremath{\mathbb{R}}}
+\newcommand{\C}{\ensuremath{\mathbb{C}}}
+\newcommand{\Q}{\ensuremath{\mathbb{Q}}}
+\newcommand{\Z}{\ensuremath{\mathbb{Z}}}
+\newcommand{\set}[1]{\ensuremath{\{#1\}}}
+%%%%%%%%%%%
+\pagestyle{head}
+\firstpageheadrule
+\firstpageheader{CSIR-NET}
+{\bfseries \huge ODE }
+{SANDEEP SUMAN}
+\runningheadrule
+\runningheader{CSIR-NET}
+{Ordinary Differential equations}
+{Page \thepage\ of \numpages}
+
+
+%%%%%%%%%%%       2014 December      %%%%%%%%%%
+\begin{document} 
+\noindent \emph{Previous year question of CSIR-NET maths exam}. 
+\begin{questions}
+
+\uplevel{\textbf{Syllabus:} 
+Existence and uniqueness of solutions of initial value problems for first order ordinary differential
+equations, singular solutions of first order ODEs, system of first order ODEs.
+General theory of homogenous and non-homogeneous linear ODEs, variation of parameters,
+Sturm-Liouville boundary value problem, Green’s function.
+}
+
+\uplevel{\textsc{Question with one correct answer}}
+\uplevel{\bf December 2014}
+\question
+Let $y: \mathbb{R}\rightarrow \mathbb{R}$  be differentiable and satisfy the ODE: $$\frac{dy}{dx}=f(y),\quad  x \in \mathbb{R} $$ $$y(0)=y(1)=0$$  
+Where, $f:\mathbb{R}\rightarrow \mathbb{R}$ is a lipschitz condition function. Then
+
+\begin{choices}
+\choice $y(x)=0$ if and only if $x\in {0,1} $
+\choice $y$ is bounded.  
+\choice $y$ is strictly increasing.
+\choice $\frac{dy}{dx}$ is unbounded.
+\end{choices}
+
+\question 
+For $\lambda \in \mathbb{R}$, consider the boundary value problem
+$$\left. \begin{matrix}  x^2 \frac{d^2y}{dx^2}+2x\frac{dy}{dx}+\lambda y=0, & x\in [1,2] \\ y(1)=y(2)=0 & \end{matrix} \right \rbrace \quad - (P_2)$$
+Which of the following statement is true?
+
+\begin{choices}
+\choice There exists a $\lambda_0 \in \mathbb{R}$ such that $(P_\lambda )$ has a nontrivial solution for any $\lambda >\lambda_0$
+\choice {$ \lambda \in \mathbb{R} : (P_\lambda ) $  has a nontrivial solution} is a dense subset of $\mathbb{R}$
+\choice For any continuous function $f:[1,2] \rightarrow \mathbb{R}$ with $f(x) \neq 0$ for some $x\in [1,2]$, there exists a solution $u$ of $(P_\lambda )$ for some $\lambda \in \mathbb{R}$ such that $\int_{1}^{2}fu\neq 0$
+\choice There exists a $\lambda \in \mathbb{R}$ such that $(P_\lambda)$ has two linearly independent solutions. 
+\end{choices}
+
+\question 
+The system of ODE 
+
+\begin{align*}
+\frac{dx}{dt}&=(1+x^2)&&  y,t\in \mathbb{R}&\\ 
+\frac{dy}{dt}&=-(1+x^2)&& x,t\in \mathbb{R}&\\ 
+(x(0),y(0))&=(a,b) &&&
+\end{align*}
+
+has a solution:
+
+\begin{checkboxes}
+\choice only if $(a,b)=(0,0)$
+\choice For any $(a,b)\in \mathbb{R}\times \mathbb{R}$ 
+\choice Such that $x^2(t)+y^2(t)=a^2+b^2$ for all $t\in \mathbb{R}$
+\choice Such that $x^2(t)+y^2(t)\rightarrow \infty$ as $t\rightarrow\infty$ if $a>0$ and $b>0$.
+\end{checkboxes}
+
+\question 
+Let $y:\mathbb{R}\rightarrow\mathbb{R}$ be a solution of the ODE 
+$$\frac{d^2y}{dx^2}-y=e^{-x},\quad x\in \mathbb{R}$$
+$$y(0)=\frac{dy}{dx}(0) =0$$
+then
+
+\begin{checkboxes}
+\choice $y$ attains its maximum on $\mathbb{R}$
+\choice $y$ is bounded on $\mathbb{R}$
+\choice $\lim_{x\to\infty} e^{-x} y(x)=\frac{1}{4}$
+\choice $\lim_{x\to\infty} e^{x} y(x)=\frac{1}{4}$
+\end{checkboxes}
+
+\question 
+Let $P,Q$ be continuous real valued function defined on $[-1,1]$ and $u_i:[-1,1] \rightarrow \mathbb{R},i=1,2$  be solutions of the ODE.
+$$\frac{d^2u}{dx^2}+P(x)\frac{du}{dx}+Q(x)u=0,\quad x\in [-1,1]$$
+satisfying $u_1\geq 0,u_2\leq 0$ and $u_1(0)=u_2(0)=0$. Let ;$w$ denote the Wronskian of $u_1$ and $u_2$, then 
+
+\begin{checkboxes}
+\choice $u_1$ and $u_2$ are linearly independent.
+\choice $u_1$ and $u_2$ are linearly independent.
+\choice $w(x)=0$ for all $x\in [-1,1]$
+\choice $w(x) \neq 0$ for some $x\in [-1,1]$
+\end{checkboxes}
+
+%%%%%%2015 June%%%%Part B %%%%%%
+\uplevel{\bf June 2015}
+\question The singular integral of the ODE $${(xy'-y)}^2 =x^2(x^2-y^2)$$ is 
+\begin{choices}
+\choice $y=x \sin x$
+\choice $y=x\sin (x+\frac{\pi}{4})$
+\choice $y=x$
+\choice $y=x+\frac{\pi}{4}$
+\end{choices}
+
+\question The initial value problem $$y'=2\sqrt{y},\hspace{8pt}(0)=a$$
+has
+
+\begin{choices}
+\choice a unique solution if $a<0$
+\choice no solution if $a<0$
+\choice infinitely many solutions if $a=0$.
+\choice a unique solution if $a\geq 0$
+\end{choices}
+
+%%%%%%%%2015 June Part C %%%%%%%%%%%
+\question Let $P$ be a continuous function on $\mathbb{R}$ and $W$ the wronskian linearly independent solutions $y_1$ and $y_2$ of the ODE.
+$$\frac{d^2}{dy^2}+(1+x^2)\frac{dy}{dx}+P(x)y=0, \quad x\in \mathbb{R}.$$ Let $W(1) =a, W(2)=b $ and $W(3)=c$, then
+
+\begin{checkboxes}
+\choice $a<0$ and $b>0$
+\choice $a<b<c$ or $a>b>c$
+\choice $\frac{a}{|a|}=\frac{b}{|b|}=\frac{c}{|c|}$
+\choice $0<a<b$ and $b>c>0$
+\end{checkboxes}
+
+\question The function $$
+G(x,\zeta)=
+\begin{cases}
+a+b log \zeta, \quad 0<x\leq \zeta \\
+c+dlogx, \quad \zeta \leq x \leq 1 \\
+\end{cases}
+$$ is a Green's Function for $xy''+y'=0$ Subject to $y$ being bounded as $x\rightarrow 0$ and $y(1)=y'(1)$ if 
+\begin{checkboxes}
+\choice $a=1,b=1,c=1,d=1$
+\choice $a=1,b=0,c=1,d=0$
+\choice $a=0,b=1,c=0,d=1$
+\choice $a=0,b=0,c=0,d=0$
+\end{checkboxes}
+
+\question For an arbitrary continuously differentiable function $f$, which of the following is a genral solution of $$z(px-qy)=y^2-x^2$$
+\begin{checkboxes}
+\choice $x^2+y^2+z^2=f(xy)$
+\choice ${(x+y)}^2+z^2=f(xy)$
+\choice $x^2+y^2+z^2=f(y-x)$
+\choice $x^2+y^2+z^2=f({(x+y)}^2+z^2)$
+\end{checkboxes}
+
+%%%%%%%%dec 2015%%%%%%%%%%%%%%
+\question Consider the ODE on $\mathbb{R}$ $y'(x) = f (y (x))$.If $f$ is an even function and $y$ is an odd function,then
+\begin{choices}
+\choice $-y(-x)$ is also a solution.
+\choice $y(-x)$ is also a solution.
+\choice $-y(x)$ is also a solution.
+\choice $y(x)y(-x)$ is also a solution.
+\end{choices} 
+\question Consider the system of ODE in $\mathbb{R^2}$, $\frac{dY}{dt}=AY,\quad Y(0)=\binom{0}{1},\quad t>0.$
+where $A=\begin{bmatrix}
+   -1 & 1  \\
+    0 & -1\\
+    \end{bmatrix}$
+and 
+$Y=\begin{smallmatrix} 
+y_1(t)\\
+y_2(t)\\
+\end{smallmatrix}$
+Then
+\begin{choices}
+\choice  $y_1(t)$ and $y_2(t)$ are monotonically increasing for $t > 0.$
+\choice $y_1(t)$ and $y_2(t)$ are monotonically increasing for $t > 1$.
+\choice $y_(t)$ and $y_2(t)$ are monotonically decreasing for $t > 0$.
+\choice $y_1(t)$ and $y_2(t)$ are monotonically decreasing for $t > 1$.
+\end{choices}
+%%%%part C%%%%%
+\question Let $u(t)$  be a continuously differentiable function taking non-negative values for $t > 0$ and satisfying $u(t) = 4u^{3/4}(t)$;$u(0) = 0$. Then
+\begin{checkboxes}
+\choice $u(t)=0$
+\choice $u(t)=t^4$
+\choice $u(t)$=
+$\begin{cases}
+0 \quad for \quad 0<t<1\\
+(t-1)^4 \quad t\geq 1\\
+\end{cases}$
+
+\choice $u(t)$=
+$\begin{cases}
+0 \quad for \quad 0<t<10\\
+(t-10)^4 \quad for \quad  t\geq 10\\
+\end{cases}$
+\end{checkboxes}
+
+\end{questions}
+
+$$\circledS$$
+\end{document}
+

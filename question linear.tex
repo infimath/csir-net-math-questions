@@ -1,0 +1,1116 @@
+% Previous year qustion paper of CSIR-NET exam 
+\documentclass[10pt]{exam}
+\usepackage{amsmath, amssymb}
+\usepackage{mathpazo} % add possibly `sc` and `osf` options
+\usepackage{eulervm}
+\usepackage{ae,aecompl}
+\usepackage[left=2cm,right=2cm,top=5cm,bottom=2cm]{geometry}
+\DeclareMathOperator{\orr}{\text{ or }}
+\DeclareMathOperator{\andd}{\text{ and }}
+\DeclareMathOperator{\lcm}{\text{lcm}}
+\DeclareMathOperator{\dist}{\text{dist}}
+\DeclareMathOperator{\card}{\text{card}}
+\DeclareMathOperator{\rank}{\text{rank}}
+\DeclareMathOperator{\nullity}{\text{nullity}}
+\DeclareMathOperator{\trace}{\text{trace}}
+\newcommand{\N}{\ensuremath{\mathbb{N}}}
+\newcommand{\R}{\ensuremath{\mathbb{R}}}
+\newcommand{\C}{\ensuremath{\mathbb{C}}}
+\newcommand{\Q}{\ensuremath{\mathbb{Q}}}
+\newcommand{\Z}{\ensuremath{\mathbb{Z}}}
+%%%%%%%%%%%
+\pagestyle{head}
+\firstpageheadrule
+\firstpageheader{CSIR-NET 2011--14}
+{\bfseries \huge Linear Algebra }
+{SANDEEP SUMAN}
+\runningheadrule
+\runningheader{CSIR-NET}
+{LINEAR ALGEBRA}
+{Page \thepage\ of \numpages}
+
+
+%%%%%%%%%%%%%%
+\begin{document} 
+
+\noindent \emph{Previous year question of CSIR-NET maths exam sg}. 
+\begin{questions}
+
+%%%%%%%%%%%%%%%%%%%% ALGEBRA OF METRICES %%%%%%%%%%%%%%%%%%%%%%%
+\uplevel{\textbf{Syllabus:} 
+Algebra of matrices, rank and determinant of matrices, linear equations.
+}
+\question
+Let
+$S=\lbrace A:A=[a_{ij}]_{5\times 5},a_{ij}=0 \orr 1 \forall i, j ,\sum_i a_{ij}=1 \forall j \andd \sum_j a_{ij}=1 \forall i \rbrace$.Then the number of element in $S$ is
+
+\begin{oneparchoices}
+\choice $5^2$ 
+\choice $5^5$  
+\choice $5!$
+\choice $55$
+\end{oneparchoices}
+
+\question
+Let $A,B$ be $n \times n$  matrices such that $BA+B^2 = I - BA^2$ where $I$ is the $n\times n$ identity matrix. Which of the following is always true?
+
+\begin{choices}
+\choice $A$ is nonsingular
+\choice $B$ is nonsingular 
+\choice $A +B$ is nonsingular
+\choice $AB$ is nonsingular 
+\end{choices}
+
+
+\question 
+Let $A$ be a $5 \times 5$ matrix with real entries such that the sum of the entries in each row of $A$ is $1$. Then the sum of all the entries in $A^3$ is 
+
+\begin{oneparchoices}
+\choice $3$ 
+\choice $15$ 
+\choice $5$ 
+\choice $125$ 
+\end{oneparchoices}
+%%%% algebra of matrices 
+\question
+Let $A$ and $B$ be $n \times n$ real matrices such that $AB=BA=0$ and $A+B$ is invertible. Which of the following are always true?
+
+\begin{checkboxes}
+\choice $\rank(A)=\rank(B)$
+\choice $\rank(A)+\rank(B)=n$
+\choice $\nullity(A)+\nullity(B)=n$
+\choice $A-B$ is invertible.
+\end{checkboxes}
+
+
+\question
+Let $D$ be non-zero $n \times n$ real matrix with $n \geq 2$. Which of the following implication is valid? 
+
+\begin{choices}
+\choice $\det(D)=0 \text{ implies } \rank(D)=0$ 
+\choice $\det(D)=1 \text{ implies } \rank(D)\neq 1$
+\choice $\rank(D)=1 \text{ implies } \det(D)\neq 1$
+\choice $\rank(D)=n \text{ implies } \det(D) \neq 1$
+\end{choices}
+
+\question
+Let $A,B$ be $n\times n$ real matrices. Which of the following statements is correct?
+
+\begin{choices}
+\choice $\rank(A+B)=\rank(A)+\rank(B)$
+\choice $\rank(A+B)\leq \rank(A)+\rank(B)$
+\choice $\rank(A+B)=\min\{\rank(A),\rank(B)\}$
+\choice $\rank(A+B)=\max\{\rank(A),\rank(B)\}$
+\end{choices}
+
+
+\question
+Which of the following matrices has the same row space as the matrix
+$$ \begin{pmatrix} 4 & 8 & 4 \\ 3 & 6 & 1 \\ 2 & 4 & 0 \end{pmatrix} ?$$
+
+\begin{oneparchoices}
+\choice $ \begin{pmatrix} 1 & 2 & 0 \\ 0 & 0 & 1 \end{pmatrix} $
+\choice $ \begin{pmatrix} 1 & 1 & 0 \\ 0 & 0 & 1 \end{pmatrix} $
+\choice $ \begin{pmatrix} 0 & 1 & 0 \\ 0 & 0 & 1 \end{pmatrix} $
+\choice $ \begin{pmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \end{pmatrix} $
+\end{oneparchoices} 
+
+\question 
+The determinant of the $n \times n$ permutation matrix 
+$$ \begin{pmatrix}&&&&1 \\ & & & 1 &  \\ & & \vdots & & \\ & 1  && & \\1 &&&& \end{pmatrix} $$
+
+\begin{oneparchoices}
+\choice $(-1)^n$ 
+\choice $(-1)^{\frac{n}{2}}$
+\choice $-1$ 
+\choice $1$
+\end{oneparchoices}
+
+\question
+The determinant 
+$$ \begin{vmatrix} 1 & 1+x & 1+x+x^2 \\ 1 & 1 + y & 1 + y + y^2 \\ 1 & 1 + z & 1 + z + z^2  \end{vmatrix} $$
+is equal to 
+
+\begin{choices}
+\choice $(z-y)(z-x)(y-x)$
+\choice $(x-y)(x-z)(y-z)$
+\choice $(x-y)^2(y-z)^2(z-x)^2$
+\choice $(x^2-y^2)(y^2-z^2)(z^2-x^2)$
+\end{choices}
+
+\question
+The determinant of the matrix $\begin{pmatrix}
+1 & 0 & 0 & 0 & 0 & 2 \\ 
+0 & 1 & 0 & 0 & 2 & 0 \\ 
+0 & 0 & 1 & 2 & 0 & 0 \\ 
+0 & 0 & 2 & 1 & 0 & 0 \\ 
+0 & 2 & 0 & 0 & 1 & 0 \\ 
+2 & 0 & 0 & 0 & 0 & 1
+\end{pmatrix} $
+ is
+ 
+\begin{oneparchoices}
+\choice $0$
+\choice $-9$
+\choice $-27$
+\choice $1$
+\end{oneparchoices} 
+
+\question 
+The matrix $A =\begin{pmatrix} 5 & 9 & 8 \\ 1 & 8 & 2 \\ 9 & 1 & 0 \end{pmatrix}$ satisfies:
+
+\begin{checkboxes}
+\choice $A$ is invertible and the invese has all integer entries.
+\choice det$(A)$ is odd.
+\choice det$(A)$ is divisible by $13$.
+\choice det$(A)$ has at least two prime divisors.
+\end{checkboxes}
+
+\question
+Let $A$ be a $5\times 5$ skeq-symmetric matrix with entries in $\R$ and $B$ be the $5\times 5$ matrix whose $(i,j)^{th}$ entry is the binomial coefficient $\begin{pmatrix}
+i \\ 
+j
+\end{pmatrix} $ for $1\leq i \leq j \leq 5$. Consider the $10 \times 10$ matrix, given in block form by
+$$C=\begin{pmatrix}
+A & A+B \\ 
+0 & B
+\end{pmatrix} $$
+Then
+
+\begin{oneparcheckboxes}
+\choice $\det C=1 \orr -1$.
+\choice $\det C=0$.
+\choice $\trace C=0$.
+\choice $\trace C =5$.
+\end{oneparcheckboxes}
+
+
+\question
+Let $A_{n\times n}= (a_{ij}), n\geq 3$, where $a_{ij}=(b_i^2-b_j^2), i,j=1,2,\cdots ,n$ for some distinct real numbers $b_1, b_2,
+\cdots , b_n$. Then $\det(A)$ is
+
+\begin{oneparchoices}
+\choice $\prod_{i<j}(b_i-b_j)$
+\choice $\prod_{i<j}(b_i+b_j)$
+\choice $0$
+\choice $1$
+\end{oneparchoices}
+
+
+\question
+Let $J$ denote a $101 \times 101 $ matrix with all the entries equal to $1$ and let $I$ denote the identity matrix of order $101$. Then the determinant of $J - I$ is 
+
+\begin{oneparchoices}
+\choice $101$
+\choice $1$
+\choice $0$
+\choice $100$
+\end{oneparchoices}
+
+%%%%%%%%%%%%% end of rank and determinat 
+
+\question
+The system of equations
+\begin{align*}
+x+y+z=1\\
+2x+3y-z=5\\
+x+2y-kz=4
+\end{align*}
+Where $k\in \R$, has an infinite number of solutions for 
+
+\begin{oneparchoices}
+\choice $k=0$
+\choice $k=1$
+\choice $k=2$
+\choice $k=3$
+\end{oneparchoices}
+\question 
+Let $A$ be a $5\times 4$ matrix with real entries such that $Ax=0$ if and only if $x=0$ where $x$ is a $4\times 1$ vector and $0$ is
+a null vector. Then, the rank of $A$ is
+
+\begin{oneparchoices}
+\choice $4$
+\choice $5$
+\choice $2$
+\choice $1$
+\end{oneparchoices}
+
+\question
+Let $A$ be a $5\times 4$ matrix with real entries such that the space of all solutions of the linear system $AX^t=[1,2,3,4,5]^t$ is
+given by $\{[1+2s,2+3s,3+4s,4+5s]^t:s \in \R\}$. Then the rank of $A$ is equal to
+
+\begin{oneparchoices}
+\choice $4$
+\choice $3$
+\choice $2$
+\choice $1$
+\end{oneparchoices}
+
+\question 
+Consider a homogeneous system of linear equation $Ax = 0$ where $A$ is an $m \times n $ real matrix and $n>m$. Then which of the following statements are always true?
+
+\begin{checkboxes}
+\choice $Ax = 0$ has a solution 
+\choice $Ax = 0$ has no non-zero  solution 
+\choice $Ax = 0$ has a non-zero solution
+\choice Dimension of the space of all solution is at least $n-m$
+\end{checkboxes}
+
+\question
+Let $M_{m \times n}(\mathbb{R})$ be the set of $m \times n$ matrices with real entries. Which of the following statements is correct?
+
+\begin{choices}
+\choice There exists $A \in M_{2 \times 5}(\mathbb{R})$ such that the dimension of the null space of $A$ is $2$.
+\choice There exists $A \in M_{2 \times 5}(\mathbb{R})$ such that the dimension of the null space of $A$ is $0$.
+\choice There exists $A \in M_{2 \times 5}(\mathbb{R})$ and $B \in M_{5 \times 2}(\mathbb{R})$ such that $AB$ is the $2 \times 2$ identify matrix 
+\choice There exists $A \in M_{2 \times 5}(\mathbb{R})$ whose null space is $\{(x_1, x_2, x_3, x_4, x_5) \mathbb{R}^5:x_1 = x_2, x_3 = x_4 = x_5 \}$
+\end{choices}
+%%%%%%%%%%%%%%%%%%%%%%%% VECTOR SPACE %%%%%%%%%%%%%%%%%%%%%%
+\uplevel{\textbf{Syllabus:} 
+Vector spaces, subspaces, linear dependence, basis, dimension, algebra of linear transformations.
+Matrix representation of linear transformations. Change of basis.
+}
+
+\question
+The dimension of vector space of all symmetric matrices of order $n \times n(n \geq 2)$
+with entries and trace equal to zero is
+
+\begin{oneparchoices}
+\choice $(n^2-n)/2-1$           
+\choice $(n^2+n)/2-1$ 
+\choice $(n^2-2n)/2-1$ 
+\choice $(n^2+2n)/2-1$
+\end{oneparchoices}
+
+\question
+The dimension of the vector space of all symmetric matrices $A=(a_{jk})$ of order $n\times n(n\geq 2)$ with real entries, $a_{11}=0$
+is
+
+\begin{oneparchoices}
+\choice $(n^2+n-4)/2$
+\choice $(n^2+n+4)/2$
+\choice $(n^2+n-3)/2$
+\choice $(n^2+n+3)/2$
+\end{oneparchoices}
+
+
+\question
+Consider the following row vectors:
+$$\alpha_1=(1,1,0,1,0,0)\quad \alpha_2=(1,1,0,0,1,0)\quad \alpha_3=(1,1,0,0,0,1)$$
+$$\alpha_4=(1,0,1,1,0,0)\quad \alpha_5=(1,0,1,0,1,0)\quad \alpha_6=(1,0,1,0,0,1)$$
+The dimension of the vector space spanned by these row vectors is
+
+\begin{oneparchoices}
+\choice $6$
+\choice $5$
+\choice $4$
+\choice $3$
+\end{oneparchoices}
+
+\question
+Let $T:\R^n \rightarrow \R^n$ be a linear transformation. Which of the following statements implies that $T$ is bijective?
+
+\begin{choices}
+\choice $\nullity(T)=n$
+\choice $\rank(T)=\nullity(T)=n$
+\choice $\rank(T)+\nullity(T)=n$
+\choice $\rank(T)-\nullity(T)=n$
+\end{choices}
+
+\question
+Let $S:\R^3 \rightarrow \R^4$ and $T:\R^4 \rightarrow \R^3$ be linear transformations such that $T \circ S$ is the identity map of
+$\R^3$. Then
+
+\begin{choices}
+\choice $T \circ S$ is the identity map of $R^4$.
+\choice $T \circ S$ is one-one, but not onto.
+\choice $T \circ S$ is onto, but not one-one.
+\choice $T \circ S$ is neither one-one nor onto.
+\end{choices}
+
+\question
+Let $W$ be the vector space of all real polynomials of degree at most 3. Define $T:W \rightarrow W$ by $T(p(x))=p'(x)$ where $p'$ is
+the derivative of $P$. The matrix of $T$ in the basis $\{1,x,x^2,x^3\}$, considered as column vectors, is given by
+
+\begin{oneparchoices}
+\choice $ \begin{pmatrix}
+0 & 0 & 0 & 0 \\ 
+0 & 1 & 0 & 0 \\ 
+0 & 0 & 2 & 0 \\ 
+0 & 0 & 0 & 3
+\end{pmatrix} $
+\choice $ \begin{pmatrix}
+0 & 0 & 0 & 0 \\ 
+1 & 0 & 0 & 0 \\ 
+0 & 2 & 0 & 0 \\ 
+0 & 0 & 3 & 0
+\end{pmatrix} $
+\choice $ \begin{pmatrix}
+0 & 1& 0 & 0 \\ 
+0 & 0 & 2 & 0 \\ 
+0 & 0 & 0 & 3 \\ 
+0 & 0 & 0 & 0
+\end{pmatrix} $
+\choice $ \begin{pmatrix}
+0 & 1 & 2 & 3 \\ 
+0 & 0 & 0 & 0 \\ 
+0 & 0 & 0 & 0 \\ 
+0 & 0 & 0 & 0
+\end{pmatrix} $
+\end{oneparchoices}
+
+\question
+Let $N$ be the vector space of all polynomials of degree at most 3. Define
+$$S:N \rightarrow N \text{ by } S(p(x))=p(x+1), p\in N$$
+Then the matrix of $S$ in the basis $\{1,x,x^2,x^3\}$, connsidered as column vectors, is given by
+
+\begin{oneparchoices}
+\choice $ \begin{pmatrix}
+1 & 0 & 0 & 0 \\ 
+0 & 2 & 0 & 0 \\ 
+0 & 0 & 3 & 0 \\ 
+0 & 0 & 0 & 4
+\end{pmatrix} $
+\choice $ \begin{pmatrix}
+1 & 1 & 1 & 1 \\ 
+0 & 1 & 2 & 3 \\ 
+0 & 0 & 1 & 3 \\ 
+0 & 0 & 0 & 1
+\end{pmatrix} $
+\choice $ \begin{pmatrix}
+0 & 2 & 0 & 0 \\ 
+0 & 0 & 2 & 0 \\ 
+0 & 0 & 0 & 3 \\ 
+0 & 0 & 0 & 0
+\end{pmatrix} $
+\choice $ \begin{pmatrix}
+0 & 1 & 2 & 3 \\ 
+0 & 0 & 0 & 0 \\ 
+0 & 0 & 0 & 0 \\ 
+0 & 0 & 0 & 0
+\end{pmatrix} $
+\end{oneparchoices}
+\question 
+A linear transformation $T$ rotates each vector in $\R^2$ clockwise through $90^{\circ}$. The matrix $T$ ralative to the standard
+ordered basis $\left(\begin{bmatrix}1 \\ 0 \end{bmatrix} ,\begin{bmatrix} 0 \\ 1 \end{bmatrix} \right)$ is
+
+\begin{oneparchoices}
+\choice $\begin{bmatrix}0 & -1 \\ -1 & 0\end{bmatrix} $
+\choice $\begin{bmatrix}0 & 1 \\ -1 & 0\end{bmatrix} $
+\choice $\begin{bmatrix}0 & 1 \\ 1 & 0\end{bmatrix} $
+\choice $\begin{bmatrix}0 & -1 \\ 1 & 0\end{bmatrix} $
+\end{oneparchoices}
+
+\question
+For a positive integer $n$, let $P_n$ denote the space of all polynimials $p(x)$ with coefficients in $\R$ such that $\deg p(x) \leq
+n$, and let $B_n$ denote the standard basis of $P_n$ given by $B_n=\{1,x,x^2,\cdots , x^n\}$. If $T:P_3 \rightarrow P_4$ is the
+linear transformation defined by $T(p(x))=x^2p'(x)+\int_0^x p(t)dt$ and $A=(a_{ij})$ is the $5\times 4$ matrix of $T$ with respect of
+standard bases $B_3$ and $B_4$, then
+
+\begin{oneparchoices}
+\choice $a_{32}=\frac{3}{2},a_{33}=\frac{7}{3}$
+\choice $a_{32}=\frac{3}{2},a_{33}=0$
+\choice $a_{32}=0,a_{33}=\frac{7}{3}$
+\choice $a_{32}=0,a_{33}=0$
+\end{oneparchoices}
+
+\question
+Let $a,b,c,d \in \mathbb{R}$ and let $T:\R^2 \rightarrow \R^2$ be the linear transformation defined by 
+$$T\left (\begin{bmatrix} x \\ y \end{bmatrix}\right) =\begin{bmatrix} ax+by \\ cx+dy \end{bmatrix} \text{ for } \begin{bmatrix} x \\ y \end{bmatrix}\in \mathbb{R}^2,$$
+Let $S:\C \rightarrow \C$ be the corresponding map defined by 
+$$S(x+iy)=(ax+by)+i(cx+dy) \text{ for } x,y\in \R.$$
+Then
+
+\begin{checkboxes}
+\choice $S$ is always $\C-$linear, that is $S(z_1+z_2)=S(z_1)+S(z_2)$ for all $z_1,z_2 \in \C$ and $S(\alpha z)=\alpha S( z)$ for all $\alpha \in \C$ and $z \in C$
+\choice $S$ is always $\C-$linear if $b=-c$ and $d=a$.
+\choice $S$ is always $\C-$linear only if $b=-c$ and $d=a$.
+\choice $S$ is always $\C-$linear if and only if $T$ is identity transformation.
+\end{checkboxes}
+
+\question 
+Let $n$ be a positive integer and $V$ be an $(n+1)-$dimensional vector space over $\R$. If $\{e_1,e_2,\cdots,e_{n+1}\}$ is a basis of $V$ and $T:V\rightarrow V$ is the linear transformation satisfying 
+$$T(e_i)=e_{i+1} \text{ for } i=1,2,\cdots, n \text{ and } T(e_{n+1})=0.$$
+Then
+
+\begin{checkboxes}
+\choice trace of $T$ is nonzero.
+\choice rank of $T$ is $n$.
+\choice nullity of $T$ is $1$.
+\choice $T^n=T\circ T \circ \cdots \circ T \text{ ($n$ times) is the zero map.} $
+\end{checkboxes}
+
+\question
+Let $n$ be an  integer, $n\geq 3$, and let $u_1,u_2,\cdots,u_n$ be $n$ linearly independent elements in a vector space over $\R$. Set $u_0=0$ and $u_{n+1}=u_1$. Define $v_i=u_i+u_{i+1}$ and $w_i=u_{i-1}+u_{i}$ FOR $i=1,2,\cdots, n$. Then
+
+\begin{choices}
+\choice $v_1,v_2,\cdots,v_n$  are linearly independent if $n=2010$.
+\choice $v_1,v_2,\cdots,v_n$  are linearly independent if $n=2011$.
+\choice $w_1,w_2,\cdots,w_n$  are linearly independent if $n=2010$.
+\choice $w_1,w_2,\cdots,w_n$  are linearly independent if $n=2011$.
+\end{choices}
+
+
+
+\question
+Let $n$ be a positive integer and let $M_n(\R)$ denote the space of all $n\times n$ real matrices. If $T:M_n(\R)\rightarrow M_n(\R)$
+is a linear transformation such that $T(A)=0$ whenever $A \in M_n(\R)$ is symmetric or skew-symmetric, then the rank of $T$ is
+
+\begin{oneparchoices}
+\choice $n(n+1)/2$              
+\choice $n(n-1)/2$ 
+\choice $n$ 
+\choice $0$
+\end{oneparchoices}
+
+\question
+Consider $\R^3$ with the standard inner product. Let $W$ be the subspace of $\R^3$ spanned by $(1,0,-1)$. Which of the following is a
+basis for the orthogonal complement of $W$?
+
+\begin{choices}
+\choice $\{(1,0,1),(0,1,0)\}$
+\choice $\{(1,2,1),(0,1,1)\}$
+\choice $\{(2,1,2),(4,2,4)\}$
+\choice $\{(2,-1,2),(1,3,1),(-1,-1,-1)\}$
+\end{choices}
+
+
+\question
+Let $A=\begin{bmatrix}
+1 & 3 & 5 & a & 13 \\ 
+0 & 1 & 7 & 9 & b \\ 
+0 & 0 & 1 & 11 & 15
+\end{bmatrix} $ where $a,b \in \R$. Choose the correct statement.
+
+\begin{choices}
+\choice There exist values of $a$ and $b$ for which the columns of $A$ are linearly independent.
+\choice There exist values of $a$ and $b$ for which $Ax=0$ has $0$ as only solution.
+\choice For all values of $a$ and $b$ the rows of $A$ span a $3-$dimensional subspace of $\R^5$.
+\choice There exist values of $a$ and $b$ for which $\rank(A)=2$.
+\end{choices}
+
+
+\question
+Let $A$ be a $4\times 4$ invertible real matrix. Which of the following is NOT necessarily true?
+
+\begin{choices}
+\choice The rows of $A$ form a basis of $\R^4$.
+\choice Null space of $A$ contains only the $0$ vector.
+\choice $A$ has 4 distinct eigenvalues.
+\choice Image of the transformation $x \mapsto Ax$ on $\R^4$ is $\R^4$.
+\end{choices}
+
+%%%%%%%%%%%%%%%%%%% EIGENVALUES AND EIGENVECTORS %%%%%%%%%%%%%%%%%%%%%
+\uplevel{\textbf{Syllabus:} 
+Eigenvalues and eigenvectors, Cayley-Hamilton theorem.
+}
+
+\question
+Suppose the matrix 
+$$A = \begin{pmatrix}
+ 40  & -29 & -11 \\ 
+-18  &  30 & -12 \\ 
+ 26  &  24 & -50
+\end{pmatrix} $$
+has a certain complex number $\lambda \neq 0$ as an eigenvalue. Which of teh following numbers must also be an eigenvalue of $A$?
+
+\begin{oneparchoices}
+\choice $\lambda + 20  $
+\choice $\lambda - 20  $
+\choice $20 - \lambda  $
+\choice $- 20 - \lambda$
+\end{oneparchoices}
+
+
+\question
+Let $A$ be a $3\times 3$ matrix with real entries such that $\det(A)=6$ and the trace of $A$ is $0$. If $\det(A+I)=0$, where $I$
+denote the $3\times 3$ identity matrix, then the eigenvalues of $A$ are
+
+\begin{oneparchoices}
+\choice $-1,2,3$
+\choice $-1,2,-3$
+\choice $1,2,-3$ 
+\choice $-1,-2,3$
+\end{oneparchoices}
+
+\question
+Let $P$ be a $2 \times 2 $ complex matrix such that $ P^* P $ is the identity matrix, where $P^*$ is the conjugate transpose of $P$. Then the eigenvalue of $P$ are 
+
+\begin{choices}
+\choice real 
+\choice complex conjugate of each other 
+\choice reciprocals of cach other 
+\choice of modulus $1$ 
+\end{choices}
+
+\question
+Let $\{v_1,\cdots , v_n\}$ be a linearly independent subset of a vector space $V$ where $n \geq 4$. Set $w_{ij} =v_i-v_j$. Let $W$ be
+the span of $\{w_{ij}|1\leq i,j\leq n\}$. Then
+
+\begin{checkboxes}
+\choice $\{w_{ij}|1\leq i<j\leq n\}$ spans $W$.
+\choice $\{w_{ij}|1\leq i<j\leq n\}$ is linearly independent subset of $W$.
+\choice $\{w_{ij}|1\leq i\leq n-1,j=i+1\}$ spans $W$.
+\choice $\dim W=n$
+\end{checkboxes} 
+
+
+\question 
+Let $A $ be a $3 \times 3 $ and $b$ be a $3 \times 1 $ matrix with integer entries. Suppose that the system $Ax = b$ has a complex solution. Then 
+
+\begin{checkboxes}
+\choice $Ax = b $ has an integer solution 
+\choice $Ax = b $ has an rational solution
+\choice The set of real solutions to $Ax = 0 $ has a basis consisting of rationl solutions.
+\choice If $ b \neq 0 $ then $A$ has positive rank.
+\end{checkboxes}
+
+
+\question
+Let $T_1,T_2$ be two linear transformations from $\mathbb{R}^n$ to $\mathbb{R}^m$. Let $\{x_1,\cdots , x_n\}$ be a basis of
+$\mathbb{R}^n$. Suppose that $T_1x_i \neq 0$ for every $i=1,2,\cdots, n$ and that $x_i \bot \ker T_2$ for every $i=1,2,\cdots, n$.
+Which of the following is/are necessarily true?
+
+\begin{checkboxes}
+\choice $T_1$ is invertible.
+\choice $T_2$ is invertible.
+\choice both $T_1,T_2$ are invertible.
+\choice neither $T_1$ nor $T_2$ is invertible.
+\end{checkboxes}
+
+\question
+Let $S:\mathbb{R}^n \rightarrow \mathbb{R}^n$ be given by $v \longmapsto \alpha v$ for a fixed $\alpha \in \mathbb{R}$, $\alpha \neq
+0$. Let $T:\mathbb{R}^n \rightarrow \mathbb{R}^n$ be a linear transformation such that $\mathbb{B}=\{v_1,\cdots , v_n\}$ is a set
+linearly independent eigenvectors of $T$. Then
+
+\begin{checkboxes}
+\choice The matrix of $T$ with respect to $\mathbb{B}$ is diagonal.
+\choice The matrix of $T-S$ with respect to $\mathbb{B}$ is diagonal.
+\choice The matrix of $T$ with respect to $\mathbb{B}$ is not necessarily diagonal, but upper triangular.
+\choice The matrix of $T$ with respect to $\mathbb{B}$ is diagonal but the matrix of $(T-S)$ with respect to $\mathbb{B}$ is not
+diagonal.
+\end{checkboxes}
+
+\question
+For an $n \times n$ real matrix $A,\lambda \in \mathbb{R}$ and a nonzero vector $v\in \mathbb{R}^n$ suppose that $(A-\lambda I)^kv=0$ for some
+positive integer $k$. Let $I$ be the $n \times n$  identity matrix. Then which of the following is/are always true?
+
+\begin{checkboxes}
+\choice $(A-\lambda I)^{k+r}v=0$ for all positive integer $r$.
+\choice $(A-\lambda I)^{k-1}v=0$
+\choice $(A-\lambda I)$ is not injective.
+\choice $\lambda$ is an eigenvalue of $A$.
+\end{checkboxes}
+
+
+\question
+Let $A\in M_{10}(\mathbb{C})$, the vector space of $10\times 10$ matrices with entries in $\mathbb{C}$. Let $W_A$ be the subspace of
+$M_{10}(\mathbb{C})$ spanned by $\{A^n|n \geq =0\}$. Choose the correct statements.
+
+\begin{checkboxes}
+\choice for any $A, \dim(W_A)\leq 10$
+\choice for any $A, \dim(W_A)< 10$
+\choice for some $A, 10<\dim(W_A)< 100$
+\choice for any $A, \dim(W_A)= 100$
+\end{checkboxes}
+
+
+\question
+A linear operator $T$ on complex vector space $V$ has characteristic polynomial $x^3(x-5)^2$ and minimal polynomials $x^2(x-5)$.
+Choose all correct options.
+
+\begin{checkboxes}
+\choice The jordan form of $T$ is uniquely determined by the given information.
+\choice There are exactly $2$  Jordan blocks in the Jordan decomposition of $T$.
+\choice The operator induced by $T$ on the quotient space $V/\ker (T-5I)$ is nilpotent, where $I$ is the identity operator.
+\choice The operator induced by $T$ on the quotient space $V/\ker (T-5I)$ is scaler multiple of the identity operator.
+\end{checkboxes}
+
+\question
+Let $A$ be a $3\times 3$ matrix with $A^3=-1$. Which of the following statements are correct?
+
+\begin{checkboxes}
+\choice $A$ has three distinct eigenvalues.
+\choice $A$ is diagonalizable over $\mathbb{C}$.
+\choice $A$ is triangularizable over $\mathbb{C}$.
+\choice $A$ is non singular.
+\end{checkboxes}
+
+\question
+Which of the following matrices is not diagonalizable over $\mathbb{R}$?
+
+\begin{oneparchoices}
+\choice $\begin{pmatrix} 1 & 1 & 0 \\ 0 & 2 & 0 \\ 0 & 0 & 2 \end{pmatrix}$
+\choice $\begin{pmatrix} 1 & 1 & 0 \\ 0 & 2 & 1 \\ 0 & 0 & 3  \end{pmatrix}$
+\choice $\begin{pmatrix} 1 & 1 & 0 \\ 0 & 1  & 0 \\ 0 & 0 & 2 \end{pmatrix}$
+\choice $\begin{pmatrix} 1 & 0 & 1 \\ 0 & 2 & 0 \\ 0 & 0 & 3 \end{pmatrix}$
+\end{oneparchoices}
+
+\question
+Let $A$ be an $n \times n$ matrix with real entries. Which of the following is correct?
+
+\begin{choices}
+\choice If $A^2=0$, then $A$ is diagonalisable over complex numbers. 
+\choice If $A^2=I$, then $A$ is diagonalisable over real numbers.
+\choice If $A^2=A$, then $A$ is diagonalisable only over complex numbers.
+\choice The only matrix of size $n$ satisfying the characteristic polynomial of $A$ is $A$.
+\end{choices}
+
+\question
+Let $N$ be a non-zero $3\times 3$ matrix with the property $N^2=0$. Which of the following is/are true?
+
+\begin{checkboxes}
+\choice $N$ is not similar to a diagonal matrix.
+\choice $N$ is similar to a diagonal matrix.
+\choice $N$ has non-zero eigenvector.
+\choice $N$ has three linearly independent eigenvectors.
+\end{checkboxes}
+
+\question 
+For a fixed positive integer $n \geq 3$ , Let $A$ be the $n\times n$ matrix defined as $A=I-\frac{1}{n}J$, where is the $n\times n$
+matrix with all entries equal to $1$. Which of the following statements is NOT true?
+
+\begin{choices}
+\choice $A^k=A$ for every positive integer $k$.
+\choice $\trace(A)=n-1$
+\choice $\rank(A)-\rank(I-A)=n$
+\choice $A$ is invertible
+\end{choices}
+
+\question 
+Let $T$ be a linear transformation on the real vector space $\mathbb{R}^n$ over $\mathbb{R}$ such that $T^2=\lambda T$ for some $\lambda \in \mathbb{R}$. Then 
+
+\begin{checkboxes}
+\choice $\Vert Tx \Vert = \vert \lambda \vert \Vert x \Vert$ for all $x\in \mathbb{R}^n$.
+\choice $\Vert Tx \Vert =  \Vert x \Vert$ for some nonzero vector $x\in \mathbb{R}^n$, then $\lambda =\pm 1$.
+\choice $T=\lambda I$ where $I$ is the identity transformation on $\mathbb{R}^n$.
+\choice $\Vert Tx \Vert >  \Vert x \Vert$ for some nonzero vector $x\in \mathbb{R}^n$, then $T$ is necessarily singular.
+\end{checkboxes}
+
+\question
+Let $A=\begin{bmatrix}
+0 & 0 & 0 & -4 \\ 
+1 & 0 & 0 & 0 \\ 
+0 & 1 & 0 & 5 \\ 
+0 & 0 & 1 & 0
+\end{bmatrix} $. Then a Jordan canonical form of $A$ is 
+
+\begin{oneparchoices}
+\choice $\begin{bmatrix}
+-1 & 0 & 0 & 0 \\ 
+0 & 1 & 0 & 0 \\ 
+0 & 0 & 2 & 0 \\ 
+0 & 0 & 0 & -2
+\end{bmatrix}  $
+\choice $\begin{bmatrix}
+-1 & 1 & 0 & 0 \\ 
+0 & 1 & 0 & 0 \\ 
+0 & 0 & 2 & 0 \\ 
+0 & 0 & 0 & -2
+\end{bmatrix}  $
+\choice $\begin{bmatrix}
+1 & 1 & 0 & 0 \\ 
+0 & 1 & 0 & 0 \\ 
+0 & 0 & 2 & 0 \\ 
+0 & 0 & 0 & -2
+\end{bmatrix}  $
+\choice $\begin{bmatrix}
+-1 & 1 & 0 & 0 \\ 
+0 & -1 & 0 & 0 \\ 
+0 & 0 & 2 & 0 \\ 
+0 & 0 & 0 & -2
+\end{bmatrix}  $
+\end{oneparchoices}
+
+
+\question
+Let $A$ be nonzero linear transformation on a real vector space $V$ of dimension $n$. Let the subspace $V_0 \subset V$ be the image
+of $V$ under $A$. Let $k=\dim V_0 <n$ and suppose thet for some $\lambda \in \mathbb{R},A^2=\lambda A$. Then
+
+\begin{checkboxes}
+\choice $\lambda =1$.
+\choice $\det A=|\lambda|^n$.
+\choice $\lambda$ is the only eigenvalue of $A$.
+\choice There is non-trivial subspace $V_1 \subset V$ such that $Ax=0$ for all $x \in V_1$
+\end{checkboxes}
+
+\question
+Let $C$ a $n\times n$  matrix. Let $W$ be the vector space spanned by $\{1,C,C^2,\cdots, C^{2n}\}$. The dimension of the vector space $W$ is
+
+\begin{oneparcheckboxes}
+\choice $2n$
+\choice at most $n$
+\choice $n^2$
+\choice at most $2n$
+\end{oneparcheckboxes}
+
+\question
+Let $V_1,V_2$ be subspace of a vector space $V$. Which of the following is necessarily a subspace of $V$?
+
+\begin{checkboxes}
+\choice $V_1 \cap V_2$
+\choice $V_1 \cup V_2$
+\choice $V_1+V_2=\{x+y:x \in V_1, y\in V_2 \}$.
+\choice $V_1\setminus V_2=\{x\in V_1 \text{ and } y  \notin V_2\}$
+\end{checkboxes}
+
+\question
+For arbitary subspace $U, V$ and $W$ of a finite dimensional vector space, which of the following hold:
+
+\begin{checkboxes}
+\choice $U \cap (V + W) \subset U \cap V + U \cap W $
+\choice $U \cap (V + W) \supset U \cap V + U \cap W $
+\choice $(U \cap V) + W \subset (U +W) \cap (V + W) $
+\choice $(U \cap V) + W \supset (U +W) \cap (V + W) $
+\end{checkboxes}
+
+
+\question
+Let $A=(a_{ij})$ be and $n\times n$ complex matrix and let $A^*$ denote the conjugate transpose of $A$. Which of the following statements are necessarily true?
+
+\begin{checkboxes}
+\choice If $A$ is invertible. then $tr(A^*A)\neq 0$, i.e., the trace of $A^*A$ is nonzero.
+\choice If $tr(A^*A)\neq 0$, then $A$ is invertible. 
+\choice then $|tr(A^*A)|<n^2$, then $|a_{ij}<1$ for some $i,j$.
+\choice then $tr(A^*A)=0$, then $A$ is the zero matrix.
+\end{checkboxes}
+
+\question
+Let $N$ be an integer $\geq 2$ and let $M_n(\R)$ denote the vector space of $n\times n$ real matrices. Let $B \in M_n(\R)$ be orthonormal matrix and let $B^t$ denote the transpose of $B$. Consider $W_B=\{B^tAB:A \in M_n(\R)\}$. Which of the following are necessarily true?
+
+\begin{checkboxes}
+\choice $W_B$ is a subspace of $M_n(\R)$ and $\dim W_B \leq \rank(B)$.
+\choice $W_B$ is a subspace of $M_n(\R)$ and $\dim W_B = \rank(B)\rank(B^t)$.
+\choice $W_B=M_n(\R)$.
+\choice $W_B$ is not a subspace of $M_n(\R)$.
+\end{checkboxes}
+
+\question
+Which of the following matrices have Jordan Canonical form equal to 
+$$\begin{pmatrix} 0 & 1 & 0 \\ 0 & 0 & 0 \\ 0 & 0 & 0 \end{pmatrix}?$$
+
+\begin{oneparcheckboxes}
+\choice $\begin{pmatrix} 0 & 0 & 1 \\ 0 & 0 & 0 \\ 0 & 0 & 0 \end{pmatrix}$
+\choice $\begin{pmatrix} 0 & 0 & 1 \\ 0 & 0 & 1 \\ 0 & 0 & 0 \end{pmatrix}$
+\choice $\begin{pmatrix} 0 & 1 & 1 \\ 0 & 0 & 0 \\ 0 & 0 & 0 \end{pmatrix}$
+\choice $\begin{pmatrix} 0 & 1 & 1 \\ 0 & 0 & 1 \\ 0 & 0 & 0 \end{pmatrix}$
+\end{oneparcheckboxes} 
+
+\question
+Let $f$ be a non-zero symmetric bilinear form on $\mathbb{R}^3$. Suppose that there exist linear transformations $T_i: \mathbb{R}^3 \rightarrow \mathbb{R} , i = 1,2 $ such that for all $ \alpha , \beta \in \mathbb{R}^3, f(\alpha, \beta) = T_1(\alpha) T_2(\beta)$. Then 
+
+\begin{checkboxes}
+\choice rank $f = 1$
+\choice dim$\{\beta \in \mathbb{R}^3 : f(\alpha, \beta) = 0 \text{ for all } \alpha \in \mathbb{R}^3 \} = 2$
+\choice $f$ is a positive semi-definite or negative semi-definite
+\choice $\{\alpha : f(\alpha, \alpha ) = 0 \} $ is a linear subspace of dimension $2$
+\end{checkboxes} 
+
+
+\question
+Let $A$ be $5 \times 5$ matrix and let $B$ be obtained by changing one element of $A$. Let $r$ and $s$ be the ranks of $A$ and $B$ respectively. Which of the following statements is/are correct?
+
+\begin{checkboxes}
+\choice $s \leq r + 1 $ 
+\choice $r -1  \leq s $
+\choice $ s = r - 1 $ 
+\choice $ s \neq r $ 
+\end{checkboxes} 
+
+\question
+Let $M_n(K)$ denote the space of all $n\times n$ matrices with entries in a field $K$. Fix a non-singular matrix $A = (A_{ij}) \in M_n(K)$, and consider the linear map $ T: M_n(K) \rightarrow M_n(K)$ given by:
+$$ T(X) = AX $$
+Then:
+
+\begin{checkboxes}
+\choice trace$(T) = n \sum_{i = 1 }^n A_{ij}$
+\choice trace$(T) = n \sum_{i = 1 }^n \sum_{j = 1}^n A_{ij}$
+\choice rank of $T$ is $n ^2$ 
+\choice $T$ is non-singular
+\end{checkboxes}
+
+
+\question
+Let $A$ be a $4 \times 7$ real matrix and $B$ be a $7 \times 4$ real matrix such that $AB = I_4$, where $I_4$ is the $4 \times 4 $ identity matrix. Which of the following is/are always true?
+
+\begin{checkboxes}
+\choice rank$(A) = 4 $
+\choice rank$(B) = 7 $
+\choice nullity$(B) = 0 $
+\choice $BA = I_7 $, where $I_7$ is the $7 \times 7$ identity matrix
+\end{checkboxes} 
+
+\question
+Which of the following are eigenvalues of the matrix 
+$$
+\begin{pmatrix} 
+0 & 0 & 0 & 1 & 0 & 0 \\
+0 & 0 & 0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 0 & 0 & 1 \\
+1 & 0 & 0 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 & 0 & 0 \\
+0 & 0 & 1 & 0 & 0 & 0
+\end{pmatrix}?
+$$
+
+\begin{oneparcheckboxes}
+\choice $+1$ 
+\choice $-1$ 
+\choice $+i$ 
+\choice $-i$ 
+\end{oneparcheckboxes}
+
+\question
+Let $A = \begin{pmatrix} x & y \\ -y & x \end{pmatrix}$, where $x , y \in \mathbb{R}$ such that $x^2 + y^2 = 1$. Then we must have:
+
+\begin{checkboxes}
+\choice For any $n \geq 1$,
+$$ A^n = \begin{pmatrix} \cos \theta  & \sin \theta  \\ - \sin \theta  & \cos \theta  \end{pmatrix}$$ 
+where $x = \cos (\theta /n), y = \sin (\theta /n)$
+\choice tr$(A) \neq 0 $ 
+\choice $A^t = A^{-1}$
+\choice $A$ is similar to a diagonal matrix over $\mathbb{C}$
+\end{checkboxes}
+
+\uplevel{\textbf{Syllabus:} 
+Canonical forms, diagonal forms,
+triangular forms, Jordan forms.
+}
+
+\question 
+Let $A$ be a $4 \times 4$ matrix over $ \mathbb{C}$ such that rank$(A) = 2$ and $A^3 = A^2 \neq 0$. Suppose that $A$ is not diagonalizable. Then 
+
+\begin{checkboxes}
+\choice One of the Jordan blocks of the Jordan canonical form of $A$ is $\begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix}$
+\choice $A^2 = A \neq 0 $ 
+\choice There exists a vector $v$ such that $Av \neq 0$ but $A^2 v = 0$ 
+\choice The characteristic polynomial of $A$ is $x^4 - x^3$
+\end{checkboxes}
+
+\question 
+Let $V$ denote a vector space over a field $F$ and with a basis $B = \{e_1, e_2, \cdots , e_n\}$. Let $x_1, x_2, \cdots ,x_n \in F $. Let $C = \{x_1e_1, x_1e_1 + x_2e_2, \cdots , x_1e_1 + x_2e_2 + \cdots +x_n e_n \}$. Then 
+
+\begin{checkboxes}
+\choice $C$ is a linearly independent set implies that $x_i \neq 0$ for every $ i = 1, 2, \cdots , n $ 
+\choice  $x_i \neq 0$ for every $ i = 1, 2, \cdots , n$ implies that $C$ is a linearly independent set.
+\choice The linear span of $C$ is $V$ implies that  $x_i \neq 0$ for every $ i = 1, 2, \cdots , n $ 
+\choice  $x_i \neq 0$ for every $ i = 1, 2, \cdots , n $  implies that the linear span of $C$ is $V$ 
+\end{checkboxes}
+
+\question
+Let $f(x)$ be the minimal polynimial of the $4\times 4$ matrix 
+$$A=\begin{pmatrix}
+0 & 0 & 0 & 1 \\ 
+1 & 0 & 0 & 0 \\ 
+0 & 1 & 0 & 0 \\ 
+0 & 0 & 1 & 0
+\end{pmatrix}. $$
+Then the rank of the $4\times 4$ matrix $f(A)$ is 
+
+\begin{oneparchoices}
+\choice $0$
+\choice $1$
+\choice $2$
+\choice $4$
+\end{oneparchoices}
+
+\question 
+Let $V$ and $W$ be finite dimensional vector spaces over $\R$ and let $T_1:V \rightarrow V$ and $T_2:V \rightarrow V$ be the linear transformation whose minimal polynomials are given by 
+$$f_1(x)=x^3+x^2+x+1 \text{ and } f_2(x)=x^4-x^2-2.$$
+Let $T:V\oplus W \rightarrow V \oplus W$  be the linear transformation defined by 
+$$T(v,w)=(T_1(v),T_2(w)) \text{ for } (v,w)\in V\oplus W $$
+and let $f(x)$ be the minimal polynomial of $T$. Then
+
+\begin{oneparchoices}
+\choice $\deg f(x)=7$
+\choice $\deg f(x)=5$
+\choice $\nullity T=1$
+\choice $\nullity T=0$
+\end{oneparchoices}
+
+\uplevel{\textbf{Syllabus:} 
+Inner product spaces, orthonormal basis.
+Quadratic forms, reduction and classification of quadratic forms .}
+
+
+\question
+Let $V$ be the inner product space consisting of linear polynomials, $p:[0,1] \rightarrow \R (i.e., V$ consist of polynomials $p$ of
+the form $p(x)=ax+b, a,b \in \R)$, with the inner product defined by
+$$\langle p,q \rangle =\int_0^1 p(x)q(x) dx \text{ for } p,q\in V$$.
+An orthonormal basis of $V$ is 
+
+\begin{oneparchoices}
+\choice $\{1,x\}$
+\choice $\{1,x\sqrt{3} \}$
+\choice $\{1,(2x-1)\sqrt{3} \}$
+\choice $\{1,x-\frac{1}{2} \}$
+\end{oneparchoices}
+
+\question
+Consider the quadratic forms $q$ and $p$ given by
+\begin{align*}
+q(x,y,z,w)&=x^2+y^2+z^2+bw^2 \text{ and}\\
+p(x,y,z,w)&=x^2+y^2+cwz 
+\end{align*}
+Which of the following statements are true?
+
+\begin{checkboxes}
+\choice $p$ and $q$ are equivalent over $\mathbb{C}$ if $b$ and $c$ are non zero complex numbers.
+\choice $p$ and $q$ are equivalent over $\mathbb{R}$ if $b$ and $c$ are non zero real numbers.
+\choice $p$ and $q$ are equivalent over $\mathbb{R}$ if $b$ and $c$ are non zero real numbers with $b$ negative.
+\choice $p$ and $q$ are NOT equivalent over $\mathbb{R}$ if $c=0$.
+\end{checkboxes}
+
+
+\question
+Which of the following matrices are positive definite?
+
+\begin{oneparcheckboxes}
+\choice $\begin{pmatrix}2 & 1 \\ 1 & 2\end{pmatrix} $
+\choice $\begin{pmatrix}1 & 2 \\ 2 & 1\end{pmatrix} $
+\choice $\begin{pmatrix}4 & -1 \\ -1 & 4\end{pmatrix} $
+\choice $\begin{pmatrix}0 & 4 \\ 4 & 0\end{pmatrix} $
+\end{oneparcheckboxes}
+
+
+\question
+Let $\zeta$ be primitive fifth root of unity. Define
+$$A=\begin{pmatrix}
+\zeta^{-2} & 0 & 0 & 0 & 0 \\ 
+0 & \zeta^{-1} & 0 & 0 & 0 \\ 
+0 & 0 & \zeta & 0 & 0 \\ 
+0 & 0 & 0 & \zeta^{1} & 0 \\ 
+0 & 0 & 0 & 0 & \zeta^{2}
+\end{pmatrix} $$
+For a vector $v=(v_1,v_2,v_3, v_4, v_5) \in \R^5$, define $|v|_A=\sqrt{|vAv^T|}$ where $v^T$ is transpose of $v$. If $w=(1,-1,1,
+1,-1)$, then $|w|_A$ equals
+
+\begin{oneparchoices}
+\choice $0$
+\choice $1$
+\choice $-1$
+\choice $2$
+\end{oneparchoices}
+
+\question
+Let $\zeta$ be primitive cube root of unity. Define
+$$A=\begin{pmatrix}
+\zeta^{-1} & 0 \\ 
+0 & \zeta 
+\end{pmatrix} $$
+For a vector $v=(v_1,v_2,v_3) \in \R^3$, define $|v|_A=\sqrt{|vAv^T|}$ where $v^T$ is transpose of $v$. If $w=(1,1, 1)$, then
+$|w|_A$ equals
+
+\begin{oneparchoices}
+\choice $0$
+\choice $1$
+\choice $-1$
+\choice $2$
+\end{oneparchoices}
+
+\question
+Let $y$ be a nonzero vector in an inner produch space $V$. Then which of the following subspace of $V$.
+
+\begin{checkboxes}
+\choice $\{x \in V|\langle x,y \rangle =0 \}$
+\choice $\{x \in V|\langle x,y \rangle =1 \}$
+\choice $\{x \in V|\langle x,z \rangle =0 \text{ for all $z$ such that }\langle z,y \rangle =0\}$
+\choice $\{x \in V|\langle x,z \rangle =1 \text{ for all $z$ such that }\langle z,y \rangle =1\}$
+\end{checkboxes}
+
+\question 
+Let $a,b,c$ be the positive real numbers such that $b^2+c^2 <a<1$. Consider the $3\times 3$ matrix 
+$$A=\begin{pmatrix}
+1 & b & c \\ 
+b & a & 0 \\ 
+c & 0 & 1
+\end{pmatrix} $$
+
+\begin{choices}
+\choice All the eigenvalue of $A$ are negative and real number.
+\choice All the eigenvalue of $A$ are positive and real number.
+\choice $A$ can have a positive as well as a negative eigenvalue.
+\choice Eigenvalues of $A$ can be non-real complex number.
+\end{choices}
+
+\question 
+For any real square matrix $M$ let $\lambda^{+}(M)$ be the number of positive eigenvalues of $M$ counting multiplicities. Let $A$ be
+an $n\times n$ real symmetric matrix and $Q$ be an $n\times n$ real invertible matrix. Then
+
+\begin{checkboxes}
+\choice $\rank A=\rank Q^TAQ$
+\choice $\rank A=\rank Q^{-1}AQ$
+\choice $\lambda^+(A)=\lambda^+(Q^TAQ)$
+\choice $\lambda^+(A)=\lambda^+(Q^{-1}AQ)$
+\end{checkboxes}
+
+\question 
+Let $u,v, w$ be vectors in an inner-product space $V$, satisfying $\|u\| = \|v \| = \|w \| =2$ and $\langle u, v \rangle = 0, \langle u, w \rangle = 1 ,\langle v, w \rangle = -1 $. Then which of the following are true?
+
+\begin{checkboxes}
+\choice $\|w + v - u \| = 2\sqrt{2}$
+\choice $\left \{\frac{1}{2}u, \frac{1}{2}v \right \}$ forms an orthonormal basis of a two dimensional subspace of $V$ 
+\choice $w$ and $4u - w$ are orthogonal to each other. 
+\choice $u, v, w$ are necessarily linearly independent
+\end{checkboxes}
+
+\question 
+Let $V$ denote the vector space of all polynimials over $\mathbb{R}$ of degree less than or equal to $n$. Which of the following defines a norm on $V$?
+
+\begin{checkboxes}
+\choice $\|p \|^2 = |p(1)|^2 + \cdots + |p(n + 1)|^2, p \in V $
+\choice $\|p \| = \sup_{t \in [0,1]}|p(t)|, p \in V $
+\choice $\|p \| = \int_0^1 |p(t)|, p \in V $
+\choice $\|p \| = \sup_{t \in [0,1]}|p'(t)|, p \in V $
+\end{checkboxes}
+
+
+\question
+Let $a_{ij}=a_ia_j, 1 \leq i, j\leq b$, where $a_1,\cdots , a_n$ are real numbers. Let $A=(a_{ij})$ be $n\times n$ matrix. Then 
+
+\begin{checkboxes}
+\choice It is possible to choose $a_1,\cdots , a_n$ so as to make the matrix $A$ non-singular.
+\choice Then matrix $A$ is positive definite if $(a_1,\cdots , a_n)$ is nonzero vector.
+\choice Then matrix $A$ is positive semidefinite if $(a_1,\cdots , a_n)$ is nonzero vector.
+\choice For all $(a_1,\cdots , a_n)$ zero is and eigenvalue of $A$.
+\end{checkboxes}
+
+\question 
+Suppose $A,B$ are $n \times n$ positive definite matrix and $I$ be the $n \times n$ identity matrix. Then which of the following are positive definite.
+
+\begin{oneparcheckboxes}
+\choice $A+B$
+\choice $ABA$
+\choice  $A^2+I$
+\choice $AB$
+\end{oneparcheckboxes}
+
+\question 
+Let $A$ be a real $n \times n$ orthogonal matrix, that is, $A^t A = AA^t = I_n$, the $n\times n$ identity matrix. Which of the following statements are necessarily true?
+
+\begin{checkboxes}
+\choice $\langle Ax, Ay \rangle = \langle x,y \rangle ~ \forall ~  x,y \in \mathbb{R}^n$
+\choice All eigenvalues of $A$ are either $+1$ or $-1$ 
+\choice The rows of $A$ form an orthonormal basis of $\mathbb{R}^n$ 
+\choice $A $ is diagonalizable over $\mathbb{R}$
+\end{checkboxes}
+
+\question
+Suppose $A$ is a $3 \times 3$ symmetric matrix such that 
+$$[x,y,1]A\begin{bmatrix}
+x \\ 
+y \\ 
+1
+\end{bmatrix} =xy -1.$$
+Let $p$ be the number of positive eigenvalue of $A$ and let $q=\rank(A)-p$. Then 
+
+\begin{oneparcheckboxes}
+\choice $p=1$.
+\choice $p=2$.
+\choice $p=3$.
+\choice $q=1$.
+\end{oneparcheckboxes} 
+
+\end{questions}
+$$\circledS$$
+\end{document}
