@@ -1,8 +1,8 @@
 before_install:
-- "sudo apt-get update && sudo apt-get install --no-install-recommends texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra texlive-latex-recommended dvipng"
+- "sudo apt-get update && sudo apt-get install --no-install-recommends texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra texlive-latex-recommended dvipng latexmk"
 script:
 - mkdir _build
-- pdflatex -output-directory _build tex/question_algebra.tex
+- latexmk -pdf -output-directory _build tex/question_algebra.tex
 deploy:
   provider: releases
   api_key:
