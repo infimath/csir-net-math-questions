@@ -1,0 +1,684 @@
+\documentclass[10pt]{exam}
+\usepackage{amsmath, amssymb}
+%Fourier for math | Utopia (scaled) for rm | Helvetica for ss | Latin Modern for tt
+\usepackage{fourier} % math & rm
+\usepackage[scaled=0.875]{helvet} % ss
+\renewcommand{\ttdefault}{lmtt} %tt
+\usepackage{ae,aecompl}
+\usepackage[left=2cm,right=2cm,top=5cm,bottom=2cm]{geometry}
+\DeclareMathOperator{\orr}{\textsf{or}}
+\DeclareMathOperator{\andd}{\textsf{and}}
+\DeclareMathOperator{\lcm}{\text{lcm}}
+\DeclareMathOperator{\card}{\text{card}}
+\DeclareMathOperator{\dist}{\text{dist}}
+\newcommand{\N}{\ensuremath{\mathbb{N}}}
+\newcommand{\R}{\ensuremath{\mathbb{R}}}
+\newcommand{\C}{\ensuremath{\mathbb{C}}}
+\newcommand{\Q}{\ensuremath{\mathbb{Q}}}
+\newcommand{\Z}{\ensuremath{\mathbb{Z}}}
+\newcommand{\set}[1]{\ensuremath{\left \{ {#1} \right \}}}
+\newcommand{\smallb}[1]{\ensuremath{\left ( {#1} \right )}}
+\newcommand{\pdd}[2]{\ensuremath{\frac{\partial^2{#1}}{\partial {#2}^2}}}
+%%%%%%%%%%%
+\pagestyle{head}
+\firstpageheadrule
+\firstpageheader{CSIR-NET}
+{\bfseries \huge Complex Analysis }
+{SANDEEP SUMAN}
+\runningheadrule
+\runningheader{CSIR-NET}
+{COMPLEX ANALYSIS}
+{Page \thepage\ of \numpages}
+
+
+%%%%%%%%%%%%%%
+\begin{document} 
+\noindent \emph{Previous year question of CSIR-NET maths exam}. 
+\begin{questions}
+
+%%%%%%%%%%%% Elementry Funtions Of Complex Numbers%%%%%%%%%%%%
+\uplevel{\textbf{Syllabus:} 
+Algebra  of  complex  numbers,  the  complex  plane,  polynomials, 
+Power series, transcendental functions such as exponential, trigonometric and hyperbolic 
+functions.
+}
+
+
+\question
+Let $p(z,w) = \alpha_0(z) + \alpha_1(z)w + \cdots + \alpha_k(z)w^k$, where $k \geq 1$ and $\alpha_0,\cdots, \alpha_k$ are non-constant polynomials in the complex variable $z$. Then 
+$ \set{(z,w) \in \C \times \C : p(z,w) = 0}$ is
+
+\begin{choices}
+\choice bounded with empty interior 
+\choice unbounded with empty interior 
+\choice bounded with non-empty interior 
+\choice unbounded with non-empty interior 
+\end{choices}  
+
+\question
+Let $U$ be an open subset of $\C$ containing $\set{z\in \C: |z| \leq 1}$ and let $f:U \rightarrow \C$ be the map defined by 
+$$ f(z) = e^{iw}\frac{z-a}{1 - \overline{a}z} \text{ for } a \in D \text { and } \psi \in [0, 2 \pi ]$$
+which of the following statements are true?
+
+\begin{checkboxes}
+\choice $|f(e^{i \theta })| =1 $ for $0 \leq \theta \leq 2 \pi $ 
+\choice $f$ maps $\set{z \in \C: |z| < 1}$ onto itself 
+\choice $f$ maps $\set{z \in \C: |z| \leq 1}$ onto itself 
+\choice $f$ is one-one
+\end{checkboxes}
+
+\question 
+The number $\sqrt{2} e^{i\pi}$ is 
+
+\begin{choices}
+\choice a rational number.
+\choice a transcendental number. 
+\choice a irrational number. 
+\choice a imaginary  number. 
+\end{choices}
+
+\question 
+Let $x,y \in \C^n$. Consider $f(x,y) = \sup_{\theta, \phi}\set{\|e^{i\theta} x+ e^{i \phi} y \|^2 : \theta, \phi \in \R}$. Which of the following is/are correct?
+
+\begin{checkboxes}
+\choice $f(x,y) \leq \|x\|^2 + \|y\|^2 +2| \langle x,y \rangle |$. 
+\choice $f(x,y) \leq \|x\|^2 + \|y\|^2 +2\mbox{ Re}\langle x,y \rangle$. 
+\choice $f(x,y)   =  \|x\|^2 + \|y\|^2 +2| \langle x,y \rangle |$. 
+\choice $f(x,y)   >  \|x\|^2 + \|y\|^2 +2| \langle x,y \rangle |$. 
+\end{checkboxes}
+
+\question 
+Consider the function $f,g:\C \rightarrow \C$ defined by $f(z) = e^z, g(z) = e^{iz}$. Let $S = \set{z \in \C: \mbox{Re}z \in [-\pi, \pi] }$. Then 
+
+\begin{choices}
+\choice $f$ is an onto entire function.
+\choice $g$ is a bounded function on $\C$.
+\choice $f$ is bounded on $S$. 
+\choice $g$ is bounded on $S$.
+\end{choices}
+
+\question 
+Let $p(z), q(z)$ be two non-zero complex polynomials. Then $p(z)\overline{q(z)}$ is analytic if and only if 
+
+\begin{choices}
+\choice $p(z)$ is constant 
+\choice $p(z)q(z)$ is constant 
+\choice $q(z)$ is constant 
+\choice $\overline{p(z)}q(z)$ is a constant 
+\end{choices}
+
+\question 
+If $z_1$ and $z_2$ are distinct complex numbers such that $|z_1| = |z_2| = 1$ and $z_1 + z_2 = 1$, then the triangle in the complex plane with $z_1, z_2$ and $-1$ as vertices 
+
+\begin{choices}
+\choice Must be equilateral
+\choice Must be right-angled
+\choice Must be isosceles, but not necessarily equilateral
+\choice Must be obtuse angled
+\end{choices}
+
+
+\question 
+The minimum possible value of $|z|^2 + |z - 3|^2 + |z - 6i|^2$, where $z$ is a complex number and $i = \sqrt{-1}$, is 
+
+\begin{oneparcheckboxes}
+\choice $15$
+\choice $45$
+\choice $30$
+\choice $20$
+\end{oneparcheckboxes}
+
+\question 
+Let $a,b,c$ be non-collinear points in the complex plane and let $\Delta$ denote the closed triangular region of the plane with vertices $a,b,c$. For $z \in \Delta$, let $h(z) = |z - a| \cdot |z - b| \cdot |z - c|$. The maximum value of the function $h$: 
+
+\begin{checkboxes}
+\choice is not attained at any point of $\Delta$ 
+\choice is  attained at an interior  point of $\Delta$ 
+\choice is  attained at the centre of gravity of $\Delta$ 
+\choice is  attained at an boundary  point of $\Delta$ 
+\end{checkboxes}
+
+%%%%%%%%%%%%  CR Equations %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\uplevel{\textbf{Syllabus:} 
+Analytic functions, Cauchy-Riemann equations. 
+}
+\question 
+Let $f : \C \rightarrow \C $ be a complex valued function given by 
+$$ f(z) = u(x,y) + iv(x,y) .$$
+Suppose that $v(x,y) = 3xy^2$. Then 
+\begin{choices}
+\choice $f$ cannot be holomorphic on $\C$ for any choice of $u$ 
+\choice $f$ is  holomorphic on $\C$ for a suitable choice of $u$ 
+\choice $f$ cannot be holomorphic on $\C$ for all choices of $u$ 
+\choice $v$ is not differentaible as a function of $x$ and $y$. 
+\end{choices}
+
+
+\question 
+Let $f:\C \rightarrow \C$ be a complex valued function of the form $f(x,y) = u(x,y) + i v(x,y)$. Suppose that $u(x,y) = 3x^2y$. Then 
+
+\begin{choices}
+\choice $f$ cannot be holomorphic on $\C$ for any choice of $v$.
+\choice $f$ is holomorphic on $\C$ for a suitable choice of $v$ 
+\choice $f$ is holomorphic on $\C$ for all choices of $v$ 
+\choice $u$ is not differentaible.
+\end{choices}
+
+\question 
+Let $f:\C \rightarrow \C$ be a analytic function. For $z = x + iy$, let $u,v:\R^2 \rightarrow \R$ be such that $u(x,y) = \mbox{Re}f(z)$ and $v(x,y) = \mbox{Im}f(z)$. Which of the following are correct?
+
+\begin{oneparcheckboxes}
+\choice $\pdd{u}{x} + \pdd{u}{y} = 0$
+\choice $\pdd{v}{x} + \pdd{v}{y} = 0$
+\choice $\frac{\partial^2 u}{\partial x \partial y} - \frac{\partial^2 u}{\partial y \partial x} = 0$
+\choice $\frac{\partial^2 v}{\partial x \partial y} - \frac{\partial^2 v}{\partial y \partial x} = 0$
+\end{oneparcheckboxes}
+
+
+\question 
+Let $u(x + iy) = x^3 - 3xy^2 + 2x$. For which of the follwing function $v$, is $u + iv$ is a holomorphic on $\C$?
+
+\begin{checkboxes}
+\choice $v(x + iy) = y^3 - 3x^2y + 2y$
+\choice $v(x + iy) = 3x^2y - y^3 + 2y$
+\choice $v(x + iy) = x^3 - 3xy^2 + 2x$
+\choice $v(x + iy) = 0$
+\end{checkboxes}
+
+
+
+\question 
+Let $f: \Omega \rightarrow \C$ be an analytic function on an open set $\Omega \subset \C$. For $r > 0$, let $D_r = \set{z \in \C: |z| < r}$ let $\overline{D}_r$ be its closure. Which of the following are necessarily true?
+
+\begin{checkboxes}
+\choice If $\overline{D}_1 \subset f(\Omega)$, then $D_r \subset f(\Omega)$ for some $r > 1$.
+\choice If $\overline{D}_1 \subset f(\Omega)$, then $D_r =  f(\Omega)$ for some $r > 1$.
+\choice If $\overline{D}_1 \subset f(\Omega)$, then $\overline{D}_r \subset f(\Omega)$ for some $r > 1$.
+\choice $f(\Omega)$ is open.
+\end{checkboxes}
+
+\question 
+Let $f(z) = z + \frac{1}{z}$ for $z \in \C$ with $z \neq 0$. Which of the following are always true?
+
+\begin{checkboxes}
+\choice $f$ is an analytic function on $\C \setminus \set{0}$.
+\choice $f$ is a conformal map  on $\C \setminus \set{0}$.
+\choice $f$ maps the unit circle to a subset of the real axis.
+\choice The image of any circle in  $\C \setminus \set{0}$ is again a circle.
+\end{checkboxes}
+%%%%%%%%%%%
+\question 
+Which of the following functions $f$ are entire functions and have simple zeros at $z = ik$ for all $k \in \Z$
+
+\begin{checkboxes}
+\choice $f(z) = a_nz^n + a_{n-1}z^{n-1} + \cdots + a_0$ for some $n\geq 1$ and some $a_0, a_1, \cdots ,a_n \in \C$.
+\choice $f(z) = a \sin 2\pi i z$, for some $a \in \C$.
+\choice $f(z) = b \cos 2\pi (i z - 1/4)$, for some $b \in \C$.
+\choice $f(z) = e^{cz}$, for some $c \in \C$.
+\end{checkboxes}
+
+
+\question 
+Consider the function $f(z) = z^2 (1- \cos z), z \in \C$. Which of the following are correct?
+
+\begin{checkboxes}
+\choice The function $f$ has zeros of order $2$ at $0$ 
+\choice The function $f$ has zeros of order $1$ at $2 \pi n,~ n = \pm 1, \pm 2, \cdots $ 
+\choice The function $f$ has zeros of order $4$ at $0$ 
+\choice The function $f$ has zeros of order $2$ at $2 \pi n,~ n = \pm 1, \pm 2, \cdots $ 
+\end{checkboxes}
+
+\question 
+Let $f(z) = \frac{z-1}{\exp \smallb{\frac{2 \pi i}{z}} - 1}$. Then, 
+
+\begin{checkboxes}
+\choice $f$ has an isolated singularity at $z = 0$. 
+\choice $f$ has an removable singularity at $z = 0$. 
+\choice $f$ has infinitely many poles. 
+\choice each pole of $f$ is of order $1$.
+\end{checkboxes} 
+
+\question 
+For $z \in \C$, define $f(z) = \frac{e^z}{e^z - 1} $. Then  
+
+\begin{checkboxes}
+\choice $f$ is entire 
+\choice The only singularities of $f$ are poles 
+\choice $f$ has infinitely many poles on the imaginary axis 
+\choice Each pole of $f$ is simple 
+\end{checkboxes}
+
+
+\question 
+At $z= 0$ the function $f(z) = \frac{e^z + 1}{e^z - 1 }$ has 
+
+\begin{checkboxes}
+\choice A removable singularity 
+\choice A pole 
+\choice An essential singularity
+\choice The residue of $f(z)$ at $z = 0$ is $2$. 
+\end{checkboxes}
+
+
+\question 
+Let $f,g$ be meromorphic function on $\C$. If $f$ has a zero of order $k$ at $z = a$ and $g$ has a pole of order $m$ at $z = 0$ then $g(f(z))$ has 
+
+\begin{choices}
+\choice A zero of order $km$ at $z = a$ 
+\choice A pole of order $km$ at $z = a$ 
+\choice A zero of order $ |k - m| $ at $z = a$ 
+\choice A pole of order $ |k - m| $ at $z = a$ 
+\end{choices}
+
+\question 
+At $z = 0$, the function $f(z) = \exp \smallb{\frac{z}{1 - \cos z}}$ has 
+
+\begin{checkboxes}
+\choice a removable singularity
+\choice an pole 
+\choice an essential singularity 
+\choice the Laurent expansion of $f(z)$ around $z = 0$ has infinitely many positive and negative powers of $z$.
+\end{checkboxes}
+%%%%%%%%%%%%  Complex Integral %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\uplevel{\textbf{Syllabus:} 
+Contour  integral,  Cauchy's  theorem,  Cauchy's  integral  formula,  Liouville's  theorem,  
+Maximum modulus principle, Schwarz lemma, Open mapping theorem.  
+}
+
+\question 
+Let $f$ be an entire function. If Re $f$ is bounded then 
+
+\begin{oneparcheckboxes}
+\choice Im $f$ is constant 
+\choice $f$ is constant 
+\choice $f = 0$ 
+\choice $f'$ is a non zero constant 
+\end{oneparcheckboxes}
+
+\question 
+Let $f$ be an entire function. If Im$f \geq 0$, then 
+
+\begin{oneparcheckboxes}
+\choice Re$f$ is constant 
+\choice $f$ is constant 
+\choice $f = 0$ 
+\choice $f'$ is a nonzero constant 
+\end{oneparcheckboxes}
+
+\question 
+Let $f$ be a non constant entire function. Which of the following properties is possible for $f$ for each $z \in \C$?
+
+\begin{oneparchoices}
+\choice Re $f(z) =$ Im $f(z)$.
+\choice $|f(z)| < 1 $.  
+\choice Im $f(z) < 0$.
+\choice $f(z) \neq 0$.
+\end{oneparchoices}
+
+
+\question 
+Let $f$ be an entire function such that $\lim_{|z| \rightarrow \infty }|f(z)| = \infty $. Then 
+
+\begin{checkboxes}
+\choice $f \smallb{\frac{1}{z}}$ has an essential singularity at $0$. 
+\choice $f$ cannot be a polynomial 
+\choice $f$ has finitely many zeros 
+\choice $ f \smallb{\frac{1}{z}}$ has a pole at $0$ 
+\end{checkboxes}
+
+\question 
+Let $\gamma_k = \set{ke^{ik\theta}: 0 \leq \theta \leq 2 \pi}$ for $k = 1,2,3$. Which of the following are necessarily correct?
+
+\begin{checkboxes}
+\choice $\frac{1}{2 \pi i} \int_{\gamma_k} \frac{1}{z} dz = 0$ for $k = 1,2,3$.
+\choice $\frac{1}{2 \pi i} \int_{\gamma_1} \frac{1}{z} dz = 1$.
+\choice $\frac{1}{2 \pi i} \int_{\gamma_2} \frac{1}{z} dz = 4$.
+\choice $\frac{1}{2 \pi i} \int_{\gamma_3} \frac{1}{z} dz = 3$.
+\end{checkboxes}
+
+\question 
+Let $f$ be an analytic function defined on $D = \set{z \in \C:|z| < 1}$ such that the range of $f$ is contained in the set $\C \setminus (- \infty ,0]$. Then 
+
+\begin{checkboxes}
+\choice $f$ is necessary a constant function.
+\choice there exists an analytic function $g$ on $D$ such that $g(z)$ is a square root of $f(z)$ for each $z \in D$.
+\choice there exists an analytic function $g$ on $D$ such that Re $g(z) \geq 0$ and $g(z)$ is a square root of $f(z)$ for each $z \in D$.
+\choice there exists an analytic function $g$ on $D$ such that Re $g(z) \leq 0$ and $g(z)$ is a square root of $f(z)$ for each $z \in D$.
+\end{checkboxes}
+ 
+\question 
+Let $B$ be an open subset of $\C$ and $\partial B$ denote the boundry of $B$. Which of the following statements are correct?
+
+\begin{checkboxes}
+\choice For every entire function $f$, we have $\partial(f(B)) \subseteq f(\partial B)$
+\choice For every entire function $f$ and a bounded open set $B$, we have $\partial(f(B)) \subseteq f(\partial B)$
+\choice For every entire function $f$, we have $\partial(f(B)) = f(\partial B)$
+\choice There exist an  unbounded open subset $B$ of $\C$ and an entire  function $f$, such that $\partial(f(B)) \subseteq f(\partial B)$
+\end{checkboxes}
+
+\question 
+Let $f$ be a meromorphic function on $\C$ such that $|f(z)| \geq |z|$ at each $z$ where $f$ is holomorphic. Then which of the following is/are true?
+
+\begin{checkboxes}
+\choice The hypothesis are contradictory, so no such $f$ exists.
+\choice Such an $f$ exists. 
+\choice There is a unique $f$ satisfying the given conditions. 
+\choice There is an $A \in \C $ with $|A| \geq 1$ such that $f(z) = Az$ for each $z \in \C$.
+\end{checkboxes}
+
+
+\question 
+Let $f$ be an entire function on $\C$ and $\Omega $ be a bounded open subset of $\C$. Let $S = \set{\text{Re }f(z) + \text{Im }f(z) \mid z \in \Omega}$. Which of the following statements is/are necessarily correct?
+
+\begin{checkboxes}
+\choice $S$ is an open set in $\R$ 
+\choice $S$ is an closed set in $\R$ 
+\choice $S$ is an open set in $\C$ 
+\choice $S$ is an discrete set in $\R$ 
+\end{checkboxes}
+
+\question 
+Let $f$ be an entire function on $\C$. Let $g(z) = \overline{f(\overline{z})}$. Which of the following statements is/are correct?
+
+\begin{checkboxes}
+\choice If $f(z) \in \R$ for all $z \in \R$ then $f = g$ 
+\choice If $f(z) \in \R$ for all $z \in \set{z \mid \text{Im }z = 0} \cup \set{z \mid \text{Im }z = a}$, for some $a > 0$, then $f(z + ia) = f(z - ia)$ for all $z \in \C$ 
+\choice If $f(z) \in \R$ for all $z \in \set{z \mid \text{Im }z = 0} \cup \set{z \mid \text{Im }z = a}$, for some $a > 0$, then $f(z + 2ia) = f(z)$ for all $z \in \C$ 
+\choice If $f(z) \in \R$ for all $z \in \set{z \mid \text{Im }z = 0} \cup \set{z \mid \text{Im }z = a}$, for some $a > 0$, then $f(z + ia) = f(z - ia)$ for all $z \in \C$ 
+\end{checkboxes}
+
+%%%%%%%%%%%%	Schwarz Lemma	%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\question 
+Let $f$ be a holomorphic function on $D=\set{z \in \C: |z| < 1}$ such that $|f(z)| \leq 1$. Define $g:D \rightarrow \C$ by 
+$$g(z) = \begin{cases} \frac{f(z)}{z} & \mbox{if } z \in D, z \neq 0 \\ 
+f'(0) & \mbox{if } z =0  \end{cases}$$
+which of the following statements are true?
+
+\begin{checkboxes}
+\choice $g$ is holomorphic on $D$ 
+\choice $|g(z)| \leq 1$ for all $z \in D$ 
+\choice $|f'(z)| \leq 1$ for all $z \in D$ 
+\choice $|f'(0)| \leq 1$
+\end{checkboxes}
+
+\question 
+Let $f:D \rightarrow D $ be holomorphic with $f(0) = 0$ and $f(1/2) = 0$, where $D = \set{z:|z|<1}$. Which of the following statements are correct?
+
+\begin{oneparcheckboxes}
+\choice $|f'(1/2)| \leq 4/3$ 
+\choice $|f'(0)| \leq 1$ 
+\choice $|f'(1/2)| \leq 4/3$ and  $|f'(0)| \leq 1$ 
+\choice $f(z) = z , z \in D$ 
+\end{oneparcheckboxes}
+
+
+\question 
+Let $f:D \rightarrow D$ be a holomorphic function with $f(0) = 0$, where $D$ is the open unit disc $\set{z \in \C: |z| < 1}$. Then
+
+\begin{oneparchoices}
+\choice $|f'(0)| = 1$
+\choice $|f'\smallb{\frac{1}{2}}| \leq  \frac{1}{2}$
+\choice $|f'\smallb{\frac{1}{2}}| \leq  \frac{1}{4}$
+\choice $|f'\smallb{ 0 }| \leq  \frac{1}{2}$
+\end{oneparchoices} 
+
+
+\question 
+Let $D = \set{z\in \C: |z| < 1}$. Which of the following are correct?
+
+\begin{checkboxes}
+\choice There exists a holomorphic function $f:D\rightarrow D$ with $f(0) = 0$ and $f'(0) = 2$ 
+\choice There exists a holomorphic function $f:D\rightarrow D$ with $f \smallb{\frac{3}{4}} = \frac{3}{4}$ and $f'\smallb{\frac{2}{3}} = \frac{3}{4}$ 
+\choice There exists a holomorphic function $f:D\rightarrow D$ with $f \smallb{\frac{3}{4}} = \frac{-3}{4}$ and $f'\smallb{\frac{2}{3}} = \frac{-3}{4}$ 
+\choice There exists a holomorphic function $f:D\rightarrow D$ with $f \smallb{\frac{1}{2}} = \frac{-1}{2}$ and $f'\smallb{\frac{1}{4}} = 1$ 
+\end{checkboxes}
+
+
+\question 
+Let $D = \set{z \in \C : |z| < 1}$. Then three exists a holomorphic function $f: D\rightarrow \overline{D}$ with $f(0) = 0$ with the property 
+
+\begin{oneparcheckboxes}
+\choice $f'(0) = \frac{1}{2}$
+\choice $| f\smallb{\frac{1}{3}} | = \frac{1}{4}$
+\choice $ f\smallb{\frac{1}{3}} = \frac{1}{4}$
+\choice $|f'(0) |  = \sec \frac{\pi}{6}$
+\end{oneparcheckboxes}
+
+
+\question 
+Let $f$ be a nonconstant holomorphic function in the unit disc $\set{|z| < 1}$ such that $f(0) = 1$. Then it is necessary that 
+
+\begin{choices}
+\choice there are initinitely many points $z$ in the unit disc such that $|f(z)| = 1$.
+\choice $f$ is bounded. 
+\choice there are at most finitely  many points $z$ in the unit disc such that $|f(z)| = 1$.
+\choice $f$ is a rational function. 
+\end{choices}
+
+
+\question 
+Let $f: D \rightarrow D $ be holomorphic with $f(x) = \frac{1}{2}$ and $f \smallb{\frac{1}{2}} = 0$, where $D =\set{z:|z| \leq 1}$. Which of the following is correct?
+
+\begin{checkboxes}
+\choice $|f'(0)| \leq \frac{3}{4}$
+\choice $|f'\smallb{\frac{1}{2}}| \leq \frac{4}{3}$
+\choice $|f'(0)| \leq \frac{3}{4}$ and $|f'\smallb{\frac{1}{2}}| \leq \frac{4}{3}$ 
+\choice  $f(z) = z, z \in D $
+\end{checkboxes}
+
+%%%%%%%%%%%%	Analytic Continuation	%%%%%%%%%%%%%%%%%%%%%%%%%%
+\question 
+Let $f,g$ be holomorphic functions defined on $A \cup D$, where 
+\begin{align*}
+A & = \set{z \in \C : \frac{1}{2} < |z| < 1} \text{ and } \\
+D & = \set{z \in \C : |z - 2| < 1 }.
+\end{align*}
+Which of the following statements are correct?
+
+\begin{checkboxes}
+\choice if $f(z)g(z) = 0$ for all $z \in A \cup D$, then either $f(z) = 0$ for all $z \in A $ or $g(z)= 0$ for $z \in A$ 
+\choice if $f(z)g(z) = 0$ for all $z \in  D$, then either $f(z) = 0$ for all $z \in D $ or $g(z)= 0$ for $z \in D$ 
+\choice if $f(z)g(z) = 0$ for all $z \in A$, then either $f(z) = 0$ for all $z \in A $ or $g(z)= 0$ for $z \in A$ 
+\choice if $f(z)g(z) = 0$ for all $z \in A \cup D$, then either $f(z) = 0$ for all $z \in A \cup D $ or $g(z)= 0$ for $z \in A \cup D$ 
+\end{checkboxes}
+
+\question 
+Let $f:\C \rightarrow \C$ be an entire function and let $g:\C \rightarrow \C$ be defined by $g(z) = f(z) - f(z+1)$ for $z \in \C$. Which to the following statements are true?
+
+\begin{checkboxes}
+\choice if $f\smallb{\frac{1}{n}}=0$ for all positive integers $n$, then $f$ is a constant function 
+\choice if $f\smallb{n}=0$ for all positive integers $n$, then $f$ is a constant function 
+\choice if $f\smallb{\frac{1}{n}}=f\smallb{\frac{1}{n}}+1$ for all positive integers $n$, then $g$ is a constant function 
+\choice if $f\smallb{n}=f \smallb{n+1}$ for all positive integers $n$, then $f$ is a constant function
+\end{checkboxes}
+
+\question 
+Let $D = \set{z \in \C : |z| < 1}$  be the unit disc. Let $f:D \rightarrow \C$ be an analytic function satisfying $f \smallb{\frac{1}{2}} = \frac{2n}{3n + 1} $ for $n \geq 1$. Then 
+
+\begin{oneparcheckboxes}
+\choice $f(0) = \frac{2}{3}$
+\choice $f$ has a simple pole at $z = -3$ 
+\choice $f(3) = \frac{1}{3}$ 
+\choice No such $f$ exists.
+\end{oneparcheckboxes}
+
+
+\question 
+Let $\C \rightarrow \C$ be a meromorphic function analytic at $0$ satisfying $f\smallb{\frac{1}{n}} = \frac{n}{2n+1} $ for $n \geq 1$, Then 
+
+\begin{checkboxes}
+\choice $f(0) = 1/2$ 
+\choice $f$ has a simple pole at $z = -2$ 
+\choice $f(2) = 1/4$ 
+\choice no such meromorphic function exists 
+\end{checkboxes}
+
+\question 
+Let $f$ be an holomorphic function on the unit disc $\set{|z| < 1}$ in the complex plane. Which of the following is/are necessarily true?
+
+\begin{checkboxes}
+\choice If for each positive integer $n$  we have $f\smallb{\frac{1}{n}} = \frac{1}{n^2}$ then $f(z) = z^2 $ on the unit disc. 
+\choice If for each positive integer $n$  we have $f\smallb{1 - \frac{1}{n}} = \smallb{1 - \frac{1}{n}}^2$ then $f(z) = z^2 $ on the unit disc. 
+\choice $f$ cannot satisfy  $f\smallb{\frac{1}{n}} = \frac{(-1)^n}{n}$ for each positive integer $n$. 
+\choice $f$ cannot satisfy  $f\smallb{\frac{1}{n}} = \frac{1}{n + 1}$ for each positive integer $n$. 
+\end{checkboxes}
+
+%%%%%%%%%%%%	Series Expansion	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\uplevel{\textbf{Syllabus:} 
+Taylor series, Laurent series, calculus of residues.  
+}
+\question 
+The power series $\sum_0^{\infty} 2^{-n}z^{2n}$ converges if 
+
+\begin{oneparchoices}
+\choice $|z| \leq 2 $
+\choice $|z| < 2 $
+\choice $|z| \geq \sqrt{2} $
+\choice $|z| <L \sqrt{2} $
+\end{oneparchoices}
+
+\question 
+Let $D = \set{z \in \C : |z| < 1}$ and let $f_n : D \rightarrow \C$ be defined by $f_n(z) = \frac{z^n}{n}$ for $n = 1,2, \cdots $ then 
+
+\begin{choices}
+\choice The sequence $\set{f_n(z)}$ and $\set{f'_n(z)}$ converge uniformly on $D$ 
+\choice The series $\sum_{n = 0}^{\infty} f_n(z)$  converge uniformly on $D$ 
+\choice The series $\sum_{n = 0}^{\infty} f'_n(z)$  converges for each  $z \in D$ 
+\choice The sequence $\set{f''_n(z)}$ does not  converges unless   $z =0$ 
+\end{choices}
+
+\question 
+The power series $\sum_{n = 0}^{\infty} 3^{-n} (z - 1)^{2n} $ converges if 
+
+\begin{oneparchoices}
+\choice $|z|\leq 3$ 
+\choice $|z| <  \sqrt{3}$ 
+\choice $|z-1| < \sqrt{3}$ 
+\choice $|z-1| \leq \sqrt{3}$ 
+\end{oneparchoices}
+
+\question 
+Consider the power series $\sum_{n =1}^{\infty} z^{n!}$. The radius of convergence of this series is 
+
+\begin{oneparchoices}
+\choice $0$ 
+\choice $\infty$ 
+\choice $1$ 
+\choice a real number greater than $1$. 
+\end{oneparchoices}
+
+\question 
+Let $p(x)$ be a polynomail of the real variable $x$ of degree $k \geq 1$. Consider the power series $f(z) = \sum_{n = 0}^{\infty} p(n) z^n$ where $z$  is a complex variable. Then the radius of convergence of $f(z)$ is 
+
+\begin{oneparchoices}
+\choice $0$ 
+\choice $1$ 
+\choice $k$ 
+\choice $\infty $ 
+\end{oneparchoices}
+
+\question 
+Let $f$ be an entire function. Suppose, for each $a \in \R$, there exists at least one coefficient $c_n$ in $f(z) = \sum_{n = 0}^{\infty} c_n (z - a)^n$, which is zero. Then 
+
+\begin{choices} 
+\choice $f^{(n)}(0) = 0$ for infinitely many $n \geq 0$ 
+\choice $f^{(2n)}(0) = 0$ for every $n \geq 0$ 
+\choice $f^{(2n + 1)}(0) = 0$ for every $n \geq 0$ 
+\choice There exists $k \geq 0$ $f^{(n)}(0) = 0$ for all $n \geq k$ 
+\end{choices}
+
+\question 
+Let $p(z) = a_0 + a_1z + \cdots + a_nz^n$ and $q(z) = b_1z + b_2z^2 + \cdots + b_nz^n$ be complex polynomials. If $a_0, b_1$ are non-zero complex numbers then the residue of $\frac{p(z)}{q(z)}$ at $0$ is equal to 
+
+\begin{oneparchoices} 
+\choice $\frac{a_0}{b_1}$
+\choice $\frac{a_0}{b_1}$
+\choice $\frac{a_0}{b_1}$
+\choice $\frac{a_0}{b_1}$
+\end{oneparchoices}
+
+\question 
+Let $\sum_0^{\infty}a_nz^n$ be a convergent power series such that $\lim_{n\rightarrow \infty} \frac{a_{n + 1}}{n} = R > 0$. Let $p$ be a polynomial of degree $d$. Then the radius of convergence of power series $\sum_0^{\infty}p(n) a_nz^n$ equals 
+
+\begin{oneparchoices}
+\choice $R$ 
+\choice $d$ 
+\choice $Rd$ 
+\choice $R + d$ 
+\end{oneparchoices}
+
+\question 
+Let $f(z) = \sum_{n = 0}^{\infty} a_nz^n$ be an entire function and let $r$ be a positive real number. Then 
+
+\begin{checkboxes}
+\choice $\sum_{n = 0}^{\infty} |a_n|^2 r^{2n} \leq \sup_{|z| = r} |f(z)|^2$
+\choice $\sup_{|z| = r} |f(z)|^2 \leq \sum_{n = 0}^{\infty} |a_n|^2 r^{2n} $
+\choice $\sum_{n = 0}^{\infty} |a_n|^2 r^{2n} \leq \frac{1}{2 \pi} \int_0^{2 \pi} |f \smallb{re^{i \theta}}|^2 d \theta$
+\choice $\sup_{|z| = r} |f(z)|^2 \leq \frac{1}{2 \pi} \int_0^{2 \pi} |f \smallb{re^{i \theta}}|^2 d \theta$
+\end{checkboxes}
+% \question 
+% Let $k$ be a positive integer. The radius of convergence of the series $ \sum_{n = 0}^{\infty} \frac{(n!)^k}{(kn)!} z^n $ is 
+
+% \begin{oneparchoices}
+% \choice $k$ 
+% \choice $k^{-k}$ 
+% \choice $k^k$ 
+% \choice $\infty$
+% \end{oneparchoices} 
+
+%%%%%%%%%%%%  Conformal Mapping %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\uplevel{\textbf{Syllabus:} 
+Conformal mappings, Mobius transformations. 
+}
+\question 
+Define 
+\begin{align*}
+H^+ = \set{z \in \C : y > 0} \\
+H^- = \set{z \in \C : y < 0} \\
+D^+ = \set{z \in \C : x > 0} \\
+D^- = \set{z \in \C : x < 0} 
+\end{align*}
+The function $f(z) = \frac{z}{3z + 1}$ 
+
+\begin{checkboxes}
+\choice Maps $H^+$ onto $H^+$ and $H^-$ onto $H^-$ 
+\choice Maps $H^+$ onto $H^-$ and $H^-$ onto $H^+$ 
+\choice Maps $H^+$ onto $L^+$ and $H^-$ onto $L^-$ 
+\choice Maps $H^+$ onto $L^-$ and $H^-$ onto $L^+$ 
+\end{checkboxes}
+
+\question 
+Let $z \in \C$ of the form $z = x + iy$, define 
+\begin{align*}
+H^+ = \set{z \in \C : y > 0} \\
+H^- = \set{z \in \C : y < 0} \\
+D^+ = \set{z \in \C : x > 0} \\
+D^- = \set{z \in \C : x < 0} 
+\end{align*}
+The function $f(z) = \frac{2z + 1}{5z + 3}$ 
+
+\begin{checkboxes}
+\choice Maps $H^+$ onto $H^+$ and $H^-$ onto $H^-$ 
+\choice Maps $H^+$ onto $H^-$ and $H^-$ onto $H^+$ 
+\choice Maps $H^+$ onto $L^+$ and $H^-$ onto $L^-$ 
+\choice Maps $H^+$ onto $L^-$ and $H^-$ onto $L^+$ 
+\end{checkboxes}
+
+\question 
+Let $f(z) = \frac{1+z}{1-z}$. Which of the following is/are true?
+
+\begin{checkboxes}
+\choice $f$ maps $\set{|z| < 1}$ onto $\set{\mbox{Re } z >0}$.
+\choice $f$ maps $\set{|z| < 1, \mbox{Im } z > 0}$ onto $\set{\mbox{Re } z >0, \mbox{Im }z > 0}$.
+\choice $f$ maps $\set{|z| < 1, \mbox{Im } z < 0}$ onto $\set{\mbox{Re } z >0, \mbox{Im }z < 0}$.
+\choice $f$ maps $\set{|z| < 1}$ onto $\set{\mbox{Im } z >0}$.
+\end{checkboxes}
+
+
+
+
+
+\end{questions}
+$$\circledS$$
+\end{document}
+
