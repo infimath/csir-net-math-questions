@@ -1,5 +1,9 @@
 before_install:
-- sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends texlive-full
+  - curl -L https://raw.githubusercontent.com/krlmlr/texlive-squashfs/master/out/texlive.tar.xz | tar xJC ~
+
+install:
+  - PATH=$HOME/texlive/bin/x86_64-linux:$PATH
+  
 script:
 - mkdir _build
 - pdflatex -output-directory _build -interaction=nonstopmode -halt-on-error tex/question_algebra.tex
